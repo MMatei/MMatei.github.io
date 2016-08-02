@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="bestiary.css">
+<script src="./jets.min.js"></script>
+<title>Conditions & Afflictions</title>
+</head>
+
+<body>
+<h1 align="center">Conditions & Afflictions</h1>
+Find: <input type="search" id="conditionsSearch"/>
+<ul id="conditionsList">
+  Conditions
+  <li class="condit"><a href="conditions/blinded.html">Blinded</a></li>
+  <li class="condit"><a href="conditions/blinded.html">Charmed</a></li>
+  <li class="condit"><a href="conditions/deafened.html">Deafened</a></li>
+  <li class="condit"><a href="conditions/frightened.html">Frightened</a></li>
+  <li class="condit"><a href="conditions/grappled.html">Grappled</a></li>
+  <li class="condit"><a href="conditions/incapacitated.html">Incapacitated</a></li>
+  <li class="condit"><a href="conditions/invisible.html">Invisible</a></li>
+  <li class="condit"><a href="conditions/paralyzed.html">Paralyzed</a></li>
+  <li class="condit"><a href="conditions/petrified.html">Petrified</a></li>
+  <li class="condit"><a href="conditions/poisoned.html">Poisoned</a></li>
+  <li class="condit"><a href="conditions/prone.html">Prone</a></li>
+  <li class="condit"><a href="conditions/restrained.html">Restrained</a></li>
+  <li class="condit"><a href="conditions/stunned.html">Stunned</a></li>
+  <li class="condit"><a href="conditions/suffocating.html">Suffocating</a></li>
+  <li class="condit"><a href="conditions/unconscious.html">Unconscious</a></li>
+  Afflictions
+  <li class="condit"><a href="conditions/rat_fever.html">Rat Fever</a></li>
+  <li class="condit"><a href="conditions/mummy_rot.html">Mummy Rot</a></li>
+</ul>
+
+<script>
+  var jets = new Jets({
+		  searchTag: '#conditionsSearch',
+		  contentTag: '#conditionsList'
+		  });
+</script>
+</body>
+</html>

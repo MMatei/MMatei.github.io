@@ -1,0 +1,95 @@
+a {
+  text-decoration: none;
+}
+a:visited {
+	color: blue;
+}
+.searchHide {
+  display: none;
+}
+.bar {
+  height: 5px;
+  background: #E69A28;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.separator {
+  height: 5px;
+  background: #7A200D;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.thinSeparator {
+  height: 1px;
+  background: #7A200D;
+  position: relative;
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+h1 {
+  color: #7A200D;
+  font-size: 250%;
+  font-variant: small-caps;
+  margin: 0px;
+}
+h4 {
+  color: #7A200D;
+  font-size: 120%;
+  font-variant: small-caps;
+  margin: 0px;
+  margin-top: 2px;
+}
+p {
+  color: #7A200D;
+  margin: 0px;
+}
+
+span {
+  font-weight: bold;
+}
+.acid {
+  color: #66ff33;
+}
+.crsh {
+  color: #000000;
+}
+.cold {
+  color: #1a1aff;
+}
+.fire {
+  color: #ff3333;
+}
+.forc {
+  color: #9933ff;
+}
+.elec {
+  color: #99ccff;
+}
+.necr {
+  color: #663300;
+}
+.pois {
+  color: #226633;
+}
+.pier {
+  color: #000000;
+  font-style: italic;
+  font-weight: normal;
+}
+.psyc {
+  color: #ff00ff;
+}
+.slsh {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.holy {
+  color: #ff9900;
+}
+.soni {
+  color:#00cc99;
+}
