@@ -1,3 +1,11 @@
+h3 {
+  color: #7A200D;
+  font-size: 150%;
+  font-variant: small-caps;
+  margin: 0px;
+  margin-top: 2px;
+  text-decoration: underline;
+}
 p {
   color: black;
   text-indent: 2em;
