@@ -4,23 +4,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" type="text/css" href="bestiary.css">
+<link rel="stylesheet" type="text/css" href="rules.css">
 <title>Rules</title>
 </head>
 
 <body>
-<style>
-  p {
-    color: black;
-    text-indent: 2em;
-  }
-</style>
-<h1 align="center">Rules</h1>
-<h4>Distance</h4>
+<div align="center">
+  <h1>Rules</h1><br/>
+  <h3>Table of Contents</h3>
+  <h4><a href="#abilityScores">Ability Scores</a></h4>
+  <h4><a href="#adventuring">Adventuring</a></h4>
+  <h4><a href="#combatRules">Combat Rules</a></h4>
+  <h4><a href="#spellcasting">Spellcasting</a></h4>
+  <h4><a href="#equipment">Equipment</a></h4>
+</div><br/>
+<h4>Measuring Distance</h4>
 <p>D&amp;D was designed with grid-based combat in mind. Therefore, in all circumstances related to combat (abilities, spells, effects, speed etc), distance will be measured in squares. As a contingency for freeform scenarios, the distance in meters will be displayed within brackets. For reference, a square was originally defined as 5 by 5 feet, which roughly translates to 1.5 by 1.5 meters (error is negligible for the small distances involved in the typical combat).</p>
 <h4>Rounding Down</h4>
 <p>Whenever you divide a number in the game, always round down.</p>
 
-<br/><h1>Ability Scores</h1>
+<br/><h1 id="abilityScores">Ability Scores</h1>
 <h4>Advantage and disadvantage</h4>
 <p>When someone has advantage on a roll, it rolls two dice and selects the best result. When someone has disadvantage on a roll, it rolls two dice and selects the worst result.</p>
 <p>You cannot stack advantages or disadvantages on a roll (you never roll more than two d20s). If a situation brings both an advantage and a disadvantage, they cancel each other out. If you have a trait that allows you to reroll, you can only reroll one of the dice, but you choose which one.</p>
@@ -78,7 +81,7 @@
 <p><b><i>Performance.</i></b> Ability to act out a role, whether to deceive someone (outright lying is deception, not performance), or to entertain an audience.</p>
 <p><b><i>Persuasion.</i></b> Ability to influence someone to view you favorably. Note that to actually persuade someone, you still need convincing arguments (see <a href="#socialInteract">Social Interaction</a>).</p>
 
-<br/><h1>Adventuring</h1>
+<br/><h1 id="adventuring">Adventuring</h1>
 <h4>Long Jump</h4>
 <p>If you run for at least 3m, then you can jump over 0.25m * Strength score. If you make a standing jump, then you can clear only half that distance. For purposes of movement speed in a turn, every meter jumped counts as a meter of normal movement. If the landing is expected to be difficult, DC 10 Acrobatics to avoid falling prone.</p>
 <h4>Height Jump</h4>
@@ -118,7 +121,7 @@
 <p>An item can be attuned to only one creature at a time. A creature can be attuned to no more than three magic items at any given time, and you can attune yourself to only one item during a short rest.</p>
 <p>Your attunement to an item ends when the item has been more than 30m away from you for 24 hours and when you die. You can also voluntarily end your attunement to an item with another short rest. Some items, however, are cursed and cannot be relinquished without the help of spells, such as <i>remove curse</i>.</p>
 
-<br/><h1>Combat Rules</h1>
+<br/><h1 id="combatRules">Combat Rules</h1>
 <p><b>Step 1.</b> Determine what each side intends to achieve and how it intends to achieve it.</p>
 <p><b>Step 2.</b> If one side wants to attack the other by surprise, determine who is surprised.</p>
 <p><b>Step 3.</b> If combat is to ensue, roll initiative.</p>
@@ -215,7 +218,7 @@
 <h4>Instant kills</h4>
 <p>If an enemy is unable to defend himself and you are armed with a lethal melee weapon, then you can kill him instantly, without any checks. A sleeping target can be killed instantly with just a Stealth check, rolled with advantage, against the target's Passive Perception. Targets who are completely at ease (unaware there is a foe around) can also be instantly killed with a Stealth check against the target's Passive Perception (this is separate from the check to Hide; and in this case you receive no advantages from being obscured or invisible).</p>
 
-<br/><h1>Spellcasting</h1>
+<br/><h1 id="spellcasting">Spellcasting</h1>
 <p>Because of the mental focus and precise gestures required for spellcasting, you must be proficient with the armor you are wearing to cast a spell.</p>
 <p>The effects of the same spell don't overlap if the spell is cast multiple times on the same target. Different spells can overlap, however.</p>
 <h4>Spell slots</h4>
@@ -236,12 +239,22 @@
 <p><b><i>Cube.</i></b> The point of origin lies on the side of the cube and isn't included in the area of effect unless you decide so.</p>
 <p><b><i>Cylinder.</i></b> The point of origin lies at the base of the cylinder and is included in the area of effect. The cylinder has a radius, as well as length. Over half of a square must lie within the area of effect for it the effect to apply there.</p>
 <p><b><i>Sphere.</i></b> The sphere extends outwards from its point of origin. Over half of a square must lie within the area of effect for it the effect to apply there.</p>
+<h4>Schools of Magic</h4>
+<p>Somewhat arbitrarily, wizards have divided magic into 8 different schools, based on their effects. No distinction is made based on the source of the magic that power the spell, which fuels considerable controversy over this classification. Nevertheless, this is the widely accepted theory.</p>
+<p><b><i>Abjuration</i></b> spells are protective in nature, though some of them have aggressive uses. They create magical barriers, negate harmful effects, harm trespassers, or banish creatures to other planes of existence.</p>
+<p><b><i>Conjuration</i></b> spells involve the transportation of objects and creatures from one location to another, as well as the creation of matter from the Weave. Some spells summon creatures or objects to the caster's side, whereas others allow the caster to teleport to another location.</p>
+<p><b><i>Divination</i></b> spells reveal information, whether in the form of secrets long forgotten, glimpses of the future, the locations of hidden things, the truth behind illusions, or visions of distant people or places.</p>
+<p><b><i>Enchantment</i></b> spells affect the minds of others, influencing or controlling their behavior. Such spells can make enemies see the caster as a friend, force creatures to take a course of action, or even control another creature like a puppet.</p>
+<p><b><i>Evocation</i></b> spells manipulate magical energy to produce a desired effect. Some call up blasts of fire or lightning. Others channel positive energy to heal wounds.</p>
+<p>Illusion spells deceive the senses or minds of others. They cause people to see things that aren't there, to miss things that are there, to hear phantom noises, or to remember things that never happened. Some illusions create phantom images that any creature can see, but the most insidious illusions plant an image directly in the mind of a creature.</p>
+<p><b><i>Necromancy</i></b> spells manipulate the energies of life and death. Such spells can grant an extra reserve of life force, drain the life energy from another creature, create undead, or even bring the dead back to life. Its effects may seem unnatural to most people, so check setting details for information on how necromancy is perceived throughout society.</p>
+<p><b><i>Transmutation</i></b> spells change the properties of a creature, object, or environment. They might turn an enemy into a harmless creature. bolsler the strength of an ally, make an object move at the caster's command, or enhance a creature's innate healing abililies to rapidly recover from injury.</p>
 
-<br/><h1>Equipment</h1>
+<br/><h1 id="equipment">Equipment</h1>
 <h4>Improvised Weapons</h4>
 <p>Sometimes characters don't have their weapons and have to attack with whatever is close at hand. An improvised weapon means any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead goblin. If the weapon is reasonably similar to a weapon, then it behaves as that weapon in all respects (for example, a table leg is as good as a club).</p>
 <p>An object that bears no resemblance to a weapon deals 1d4 damage (or whatever the DM deems appropriate). If a characler uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown property, it also deals 1d4 damage. An improvised thrown weapon has a normal range of 4 squares and a long range of 12 squares.</p>
-<p>A brief rundown of some oft-encountered equipment:</p>
+<h4>Adventuring Equipment</h4>
 <p><b><i>Acid Flask.</i></b> 25gp. As an action, you can splash the contents of this flask onto a creature within a square of you, or throw it up to 4 squares, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. The target takes 2d6 acid damage.</p>
 <p><b><i>Alchemist's Fire.</i></b> 25gp. As an action, you can splash the contents of this flask onto a creature within a square of you, or throw it up to 4 squares, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. On a hit, the target is set <a href="conditions/on_fire.html">ablaze</a>.</p>
 <p><b><i>Antitoxin.</i></b> 50gp. A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour.</p>
@@ -255,6 +268,7 @@
 <p><b><i>Holy Water.</i></b> 25gp. As an action, you can splash the contents of this flask onto a creature within a square of you, or throw it up to 4 squares, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.</p>
 <p>Any cleric or paladin serving a Good Deity may create holy water by performing a special ritual. For one flask, the ritual takes 1 hour to perform, uses 24 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot.</p>
 <p><b><i>Hunting Trap.</i></b> 5gp. When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on apressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree ar a spike driven into the ground. A creature that steps on the plate must succeed on DC 13 Dex or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 1m long). A creature can use its action to make a DC 13 Str to open the trap and free its captive. Each failed check deals 1 piercing damage to the trapped creature.</p>
+<p><b><i>Ink (vial with 30g of ink).</i></b> 10gp. Vital if one wants to write on a parchment with something more elegant (and less painful) than one's own blood. For more crude purposes, a chalk worth 1cp might be more appropriate. A sheet of parchment costs 1sp, while the highly prized paper costs 2sp.</p>
 <p><b><i>Lamp.</i></b> 5sp. Casts a bright light in a 3 square radius, and dim light for a further 6 squares. It uses a flask of oil and burns for about 6 hours.</p>
 <p><b><i>Lantern.</i></b> 15gp. Has a bullseye that directs light in a bright cone facing forwards. It casts a bright light for 12 squares, and dim light for an additional 12 squares. It also has a hood that can be lowered, so that the lantern only gives off dim light in 1 square. It uses a flask of oil and burns for about 6 hours.</p>
 <p><b><i>Manacles.</i></b> 2gp. These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dex check. Breaking them requires a successful DC 20 Str check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Sleight of Hand check. Manacles have 15 hit points.</p>
@@ -264,8 +278,19 @@
 <p><b><i>Potion of Healing.</i></b> 50gp. A character who drinks the magical red fiuid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.</p>
 <p><b><i>Quiver.</i></b> 1gp, 20 arrows or 20 crossbow bolts or 40 blowgun needles or 500 stone sling bullets, or 100 lead sling bullets (+1).</p>
 <p><b><i>Rope.</i></b> 5sp. It's 6m long, has 2hp and can be burst with a DC 17 Str check.</p>
+<p><b><i>Spellbook.</i></b> 50gp. A wizard's most essential companion. Losing it means losing all one's spells, as this spellbook is completely blank!</p>
 <p><b><i>Thieves' Tools.</i></b> 25gp. This set of tools inc1udes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks. They are, at any rate, required in order to attempt these actions at all (you can also improvise these tools, if there are adequate materials at hand).</p>
 <p><b><i>Torch.</i></b> 1cp. A torch burns for 1 hour, providing bright light in a 4 square radius and dim light for an additional 4 squares. If you make a melee attack with a burning torch and hit, it deals 1d4 crushing + 1 extra fire damage.</p>
+<h4 id="equipmentPacks">Equipment Packs</h4>
+<p>The starting equipment you get from your class includes a collection of useful adventuring gear, put together in a pack. The contents of these packs are listed here. These packs may also be bought at specialized shops, which might be cheaper than buying the items individually.</p>
+<p><b><i>Burglar's Pack (16gp).</i></b> Includes a backpack, a bag of ball bearings, two ropes, a bell, 5 candles, a crowbar, a hammer, 10 climbing anchors and rope, a lantern, 2 flasks of oil, 5 days of rations, a tinderbox, and a waterskin.</p>
+<p><b><i>Diplomat's Pack (39 gp).</i></b> Includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap.</p>
+<p><b><i>Dungeoneer's Pack (12 gp).</i></b> Includes a backpack, a crowbar, a hammer, a rope, 10 climbing anchors and rope, 10 torches, a tinderbox, 10 days of rations, and a waterskin.</p>
+<p><b><i>Entertainer's Pack (40 gp).</i></b> Includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit.</p>
+<p><b><i>Explorer's Pack (10 gp).</i></b> Includes a backpack, a bedroll, a mess kit, a tinderbox, a rope, 10 torches, 10 days of rations, and a waterskin.</p>
+<p><b><i>Priest's Pack (19 gp).</i></b> Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a
+censer, vestments, 2 days of rations, and a waterskin.</p>
+<p><i><b>Scholar's Pack (40 gp).</b></i> Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife.</p>
 <h4>Living Expenses</h4>
 <p>When not out in the dungeon or wilderness, you need a place to stay, a hot meal to eat, and perhaps some drink to go along. A modest lifestyle, covering the basic comforts a person of the middle class might expect, costs 1gp per person. Stingy characters might want to spend less, by going to less reputable establishments, but this exposes them to a real risk of mugging, violence or disease (roll a 1d10; on a roll less or equal to the number of sp saved, something bad happens, at the DM's discretion).</p>
 <p>Of course, characters may also choose to reward themselves after a hard day's work, and pay for better lodgings or even lavish parties. This is quite beneficial in striking up relations with the important persons of the day, though it offers no concrete bonus.</p>

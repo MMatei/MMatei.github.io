@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="bestiary.css">
+<script src="./jets.min.js"></script>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+</style>
+<title>Spells</title>
+</head>
+
+<body>
+<h1 align="center">Spells</h1><br/><br/>
+<table>
+  <tr>
+  <td><a href="javascript:filterSpells('spell')">All Classes</a></td>
+  <td><a href="javascript:filterSpells('bards')">Bard</a></td>
+  <td><a href="javascript:filterSpells('cleri')">Cleric</a></td>
+  <td><a href="javascript:filterSpells('druid')">Druid</a></td>
+  <td><a href="javascript:filterSpells('palad')">Paladin</a></td>
+  <td><a href="javascript:filterSpells('range')">Ranger</a></td>
+  <td><a href="javascript:filterSpells('sorce')">Sorcerer</a></td>
+  <td><a href="javascript:filterSpells('warlo')">Warlock</a></td>
+  <td><a href="javascript:filterSpells('wizar')">Wizard</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:filterSpells('spell')">All Schools</a></td>
+  <td><a href="javascript:filterSpells('abjur')">Abjuration</a></td>
+  <td><a href="javascript:filterSpells('conju')">Conjuration</a></td>
+  <td><a href="javascript:filterSpells('divin')">Divination</a></td>
+  <td><a href="javascript:filterSpells('encha')">Enchantment</a></td>
+  <td><a href="javascript:filterSpells('evoca')">Evocation</a></td>
+  <td><a href="javascript:filterSpells('illus')">Illusion</a></td>
+  <td><a href="javascript:filterSpells('necro')">Necromancy</a></td>
+  <td><a href="javascript:filterSpells('trans')">Transmutation</a></td>
+  </tr>
+</table><br/><br/>
+Find: <input type="search" id="spellsSearch"/>
+<ul id="spellsList">
+  <li id="cantrip" class="level">Cantrip</li>
+  <ul class="leveList">
+    <li class="spell conju sorcerer wizard"><a href="spells/acid_splash.html">Acid Splash</a></li>
+    <li class="spell encha bard sorcerer warlock wizard"><a href="spells/acid_splash.html">Friends</a></li>
+  </ul>
+  <li id="lvl1" class="level">Level I</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl2" class="level">Level II</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl3" class="level">Level III</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl4" class="level">Level IV</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl5" class="level">Level V</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl6" class="level">Level VI</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl7" class="level">Level VII</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl8" class="level">Level VIII</li>
+  <ul class="leveList">
+  </ul>
+  <li id="lvl9" class="level">Level IX</li>
+  <ul class="leveList">
+  </ul>
+</ul>
+
+<script>
+  var jets = new Jets({
+		  searchTag: '#spellsSearch',
+		  contentTag: '.leveList',
+      didSearch: function(search_phrase) {
+            var elements = document.getElementsByClassName("level");
+            if (!search_phrase.trim()) {
+              for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("searchHide");
+              }
+            } else {
+              for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.add("searchHide");
+              }
+            }     
+          }
+      });
+  function filterSpells(c) {
+    var spells = document.getElementsByClassName("spell");
+    var n = spells.length;
+    for (var i = 0; i < n; i++) {
+      if (spells[i].className.includes(c))
+        spells[i].classList.remove("searchHide");
+      else
+        spells[i].classList.add("searchHide");
+    }
+  }
+  var QueryString = function () {
+    // This function is anonymous, is executed immediately and 
+    // the return value is assigned to QueryString!
+    var query_string = {};
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+      var pair = vars[i].split("=");
+          // If first entry with this name
+      if (typeof query_string[pair[0]] === "undefined") {
+        query_string[pair[0]] = decodeURIComponent(pair[1]);
+          // If second entry with this name
+      } else if (typeof query_string[pair[0]] === "string") {
+        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+        query_string[pair[0]] = arr;
+          // If third or later entry with this name
+      } else {
+        query_string[pair[0]].push(decodeURIComponent(pair[1]));
+      }
+    } 
+    return query_string;
+  }();
+  if (QueryString.filter != null)
+    filterSpells(QueryString.filter)
+</script>
+</body>
+</html>
