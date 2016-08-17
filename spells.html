@@ -18,26 +18,30 @@ table {
 <h1 align="center">Spells</h1><br/><br/>
 <table>
   <tr>
-  <td><a href="javascript:filterSpells('spell')">All Classes</a></td>
-  <td><a href="javascript:filterSpells('bards')">Bard</a></td>
-  <td><a href="javascript:filterSpells('cleri')">Cleric</a></td>
-  <td><a href="javascript:filterSpells('druid')">Druid</a></td>
-  <td><a href="javascript:filterSpells('palad')">Paladin</a></td>
-  <td><a href="javascript:filterSpells('range')">Ranger</a></td>
-  <td><a href="javascript:filterSpells('sorce')">Sorcerer</a></td>
-  <td><a href="javascript:filterSpells('warlo')">Warlock</a></td>
-  <td><a href="javascript:filterSpells('wizar')">Wizard</a></td>
+  <td><input type="radio" name="characterClass" id="spell" onclick="filterSpells('spell','','')" checked> All Classes</td>
+  <td><input type="radio" name="characterClass" id="bards" onclick="filterSpells('bards','','')"> Bard</td>
+  <td><input type="radio" name="characterClass" id="cleri" onclick="filterSpells('cleri','','')"> Cleric</td>
+  <td><input type="radio" name="characterClass" id="druid" onclick="filterSpells('druid','','')"> Druid</td>
+  <td><input type="radio" name="characterClass" id="palad" onclick="filterSpells('palad','','')"> Paladin</td>
+  <td><input type="radio" name="characterClass" id="range" onclick="filterSpells('range','','')"> Ranger</td>
+  <td><input type="radio" name="characterClass" id="sorce" onclick="filterSpells('sorce','','')"> Sorcerer</td>
+  <td><input type="radio" name="characterClass" id="warlo" onclick="filterSpells('warlo','','')"> Warlock</td>
+  <td><input type="radio" name="characterClass" id="wizar" onclick="filterSpells('wizar','','')"> Wizard</td>
   </tr>
   <tr>
-  <td><a href="javascript:filterSpells('spell')">All Schools</a></td>
-  <td><a href="javascript:filterSpells('abjur')">Abjuration</a></td>
-  <td><a href="javascript:filterSpells('conju')">Conjuration</a></td>
-  <td><a href="javascript:filterSpells('divin')">Divination</a></td>
-  <td><a href="javascript:filterSpells('encha')">Enchantment</a></td>
-  <td><a href="javascript:filterSpells('evoca')">Evocation</a></td>
-  <td><a href="javascript:filterSpells('illus')">Illusion</a></td>
-  <td><a href="javascript:filterSpells('necro')">Necromancy</a></td>
-  <td><a href="javascript:filterSpells('trans')">Transmutation</a></td>
+  <td><input type="radio" name="spellSchool" id="spell" onclick="filterSpells('','spell','')" checked> All Schools</td>
+  <td><input type="radio" name="spellSchool" id="abjur" onclick="filterSpells('','abjur','')"> Abjuration</td>
+  <td><input type="radio" name="spellSchool" id="conju" onclick="filterSpells('','conju','')"> Conjuration</td>
+  <td><input type="radio" name="spellSchool" id="divin" onclick="filterSpells('','divin','')"> Divination</td>
+  <td><input type="radio" name="spellSchool" id="encha" onclick="filterSpells('','encha','')"> Enchantment</td>
+  <td><input type="radio" name="spellSchool" id="evoca" onclick="filterSpells('','evoca','')"> Evocation</td>
+  <td><input type="radio" name="spellSchool" id="illus" onclick="filterSpells('','illus','')"> Illusion</td>
+  <td><input type="radio" name="spellSchool" id="necro" onclick="filterSpells('','necro','')"> Necromancy</td>
+  <td><input type="radio" name="spellSchool" id="trans" onclick="filterSpells('','trans','')"> Transmutation</td>
+  </tr>
+  <tr>
+  <td><input type="radio" name="ritual" id="spell" onclick="filterSpells('','','spell')" checked> All Spells</td>
+  <td><input type="radio" name="ritual" id="ritua" onclick="filterSpells('','','ritua')"> Only Rituals</td>
   </tr>
 </table><br/><br/>
 Find: <input type="search" id="spellsSearch"/>
@@ -86,6 +90,25 @@ Find: <input type="search" id="spellsSearch"/>
   </ul>
   <li id="lvl1" class="level">Level I</li>
   <ul class="leveList">
+    <li class="spell abjur druid range wizar"><a href="spells/absorb_elements.html">Absorb Elements</a></li>
+    <li class="spell abjur ritua range wizar"><a href="spells/alarm.html">Alarm</a></li>
+    <li class="spell encha bards druid range"><a href="spells/animal_friendship.html">Animal Friendship</a></li>
+    <li class="spell abjur warlo"><a href="spells/armor_agathys.html">Armor of Agathys</a></li>
+    <li class="spell conju warlo"><a href="spells/arms_hadar.html">Arms of Hadar</a></li>
+    <li class="spell encha bards cleri"><a href="spells/bane.html">Bane</a></li>
+    <li class="spell divin druid range"><a href="spells/beast_bond.html">Beast Bond</a></li>
+    <li class="spell encha cleri palad"><a href="spells/bless.html">Bless</a></li>
+    <li class="spell evoca sorce wizar"><a href="spells/burning_hands.html">Burning Hands</a></li>
+    <li class="spell trans sorce wizar"><a href="spells/catapult.html">Catapult</a></li>
+    <li class="spell encha bards cleri druid sorce warlo wizar"><a href="spells/charm_person.html">Charm Person</a></li>
+    <li class="spell evoca sorce wizar"><a href="spells/chromatic_orb.html">Chromatic Orb</a></li>
+    <li class="spell illus sorce wizar"><a href="spells/color_spray.html">Color Spray</a></li>
+    <li class="spell encha cleri palad"><a href="spells/command.html">Command</a></li>
+    <li class="spell encha palad"><a href="spells/compelled_duel.html">Compelled Duel</a></li>
+    <li class="spell divin bards sorce warlo wizar"><a href="spells/comprehend_languages.html">Comprehend Languages</a></li>
+    <li class="spell trans cleri druid"><a href="spells/create_water.html">Create/Destroy Water</a></li>
+    <li class="spell evoca bards cleri druid palad range"><a href="spells/cure_wounds.html">Cure Wounds</a></li>
+    <li class="spell divin cleri palad"><a href="spells/detect_evil.html">Detect Evil and Good</a></li>
   </ul>
   <li id="lvl2" class="level">Level II</li>
   <ul class="leveList">
@@ -130,11 +153,25 @@ Find: <input type="search" id="spellsSearch"/>
             }     
           }
       });
-  function filterSpells(c) {
+  // Global filter variables
+  characterClass = 'spell';
+  magicSchool = 'spell';
+  ritual = 'spell';
+  // filter the spells by class, school, ritual
+  // a variable can be empty, in which case it's replaced by the global var
+  function filterSpells(cc, ms, ri) {
     var spells = document.getElementsByClassName("spell");
     var n = spells.length;
+    if (cc == '' || cc == null) cc = characterClass;
+    if (ms == '' || ms == null) ms = magicSchool;
+    if (ri == '' || ri == null) ri = ritual;
+    // save the new filter settings
+    characterClass = cc;
+    magicSchool = ms;
+    ritual = ri;
     for (var i = 0; i < n; i++) {
-      if (spells[i].className.includes(c))
+      cn = spells[i].className;
+      if (cn.includes(cc) && cn.includes(ms) && cn.includes(ri))
         spells[i].classList.remove("searchHide");
       else
         spells[i].classList.add("searchHide");
@@ -162,8 +199,19 @@ Find: <input type="search" id="spellsSearch"/>
     } 
     return query_string;
   }();
-  if (QueryString.filter != null)
-    filterSpells(QueryString.filter)
+  filterSpells(QueryString.cc, QueryString.ms, QueryString.ri)
+  if (QueryString.cc != null) {
+    btn = document.getElementById(QueryString.cc);
+    if (btn != null) btn.checked = true;
+  }
+  if (QueryString.ms != null) {
+    btn = document.getElementById(QueryString.ms);
+    if (btn != null) btn.checked = true;
+  }
+  if (QueryString.ri != null) {
+    btn = document.getElementById(QueryString.ri);
+    if (btn != null) btn.checked = true;
+  }
 </script>
 </body>
 </html>
