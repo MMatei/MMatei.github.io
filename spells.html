@@ -9,6 +9,15 @@
 table {
   border-collapse: collapse;
   width: 100%;
+  max-width: 100%;
+}
+dl {
+  display: inline-block;
+  margin: 0;
+}
+dd {
+  display: inline;
+  padding-right: 20px;
 }
 </style>
 <title>Spells</title>
@@ -44,6 +53,7 @@ table {
   <td><input type="radio" name="ritual" id="ritua" onclick="filterSpells('','','ritua')"> Only Rituals</td>
   </tr>
 </table><br/><br/>
+
 Find: <input type="search" id="spellsSearch"/>
 <ul id="spellsList">
   <li id="cantrip" class="level">Cantrip</li>
@@ -122,9 +132,48 @@ Find: <input type="search" id="spellsSearch"/>
     <li class="spell necro sorce wizar"><a href="spells/false_life.html">False Life</a></li>
     <li class="spell trans bards sorce wizar"><a href="spells/feather_fall.html">Feather Fall</a></li>
     <li class="spell conju ritua wizar"><a href="spells/find_familiar.html">Find Familiar</a></li>
+    <li class="spell conju druid range sorce wizar"><a href="spells/fog_cloud.html">Fog Cloud</a></li>
+    <li class="spell trans druid range"><a href="spells/goodberry.html">Goodberry</a></li>
+    <li class="spell conju wizar"><a href="spells/grease.html">Grease</a></li>
+    <li class="spell evoca cleri"><a href="spells/guiding_bolt.html">Guiding Bolt</a></li>
+    <li class="spell conju range"><a href="spells/hail_thorns.html">Hail of Thorns</a></li>
+    <li class="spell evoca bards cleri druid"><a href="spells/healing_word.html">Healing Word</a></li>
+    <li class="spell evoca warlo"><a href="spells/hellish_rebuke.html">Hellish Rebuke</a></li>
+    <li class="spell encha bards palad"><a href="spells/heroism.html">Heroism</a></li>
+    <li class="spell encha warlo"><a href="spells/hex.html">Hex</a></li>
+    <li class="spell divin range"><a href="spells/hunter_mark.html">Hunter's Mark</a></li>
+    <li class="spell conju druid sorce wizar"><a href="spells/ice_knife.html">Ice Knife</a></li>
+    <li class="spell divin ritua bards wizar"><a href="spells/identify.html">Identify</a></li>
+    <li class="spell illus ritua bards warlo wizar"><a href="spells/illusory_script.html">Illusory Script</a></li>
+    <li class="spell necro cleri"><a href="spells/inflict_wounds.html">Inflict Wounds</a></li>
+    <li class="spell trans druid range sorce wizar"><a href="spells/jump.html">Jump</a></li>
+    <li class="spell trans bards druid range wizar"><a href="spells/longstrider.html">Longstrider</a></li>
+    <li class="spell abjur sorce wizar"><a href="spells/mage_armor.html">Mage Armor</a></li>
+    <li class="spell evoca sorce wizar"><a href="spells/magic_missile.html">Magic Missile</a></li>
+    <li class="spell abjur cleri palad sorce wizar"><a href="spells/protection.html">Protection from Good and Evil</a></li>
+    <li class="spell trans ritua cleri druid palad"><a href="spells/purify_food.html">Purify Food and Drink</a></li>
+    <li class="spell necro sorce wizar"><a href="spells/ray_sick.html">Ray of Sickness</a></li>
+    <li class="spell abjur cleri"><a href="spells/sanctuary.html">Sanctuary</a></li>
+    <li class="spell evoca palad"><a href="spells/searing_smite.html">Searing Smite</a></li>
+    <li class="spell abjur sorce wizar"><a href="spells/mage_armor.html">Shield</a></li>
+    <li class="spell illus bards sorce wizar"><a href="spells/silent_image.html">Silent Image</a></li>
+    <li class="spell encha bards sorce wizar"><a href="spells/sleep.html">Sleep</a></li>
+    <li class="spell divin ritua bards druid range"><a href="spells/speak_animal.html">Speak with Animals</a></li>
+    <li class="spell encha bards wizar"><a href="spells/tasha_laugh.html">Tasha's Hideous Laughter</a></li>
+    <li class="spell conju ritua wizar"><a href="spells/tenser_disk.html">Tenser's Floating Disk</a></li>
+    <li class="spell evoca palad"><a href="spells/thunderous_smite.html">Thunderous Smite</a></li>
+    <li class="spell evoca bards druid sorce wizar"><a href="spells/thunderwave.html">Thunderwave</a></li>
+    <li class="spell conju ritua wizar"><a href="spells/unseen_servant.html">Unseen Servant</a></li>
+    <li class="spell evoca sorce warlo wizar"><a href="spells/witch_bolt.html">Witch Bolt</a></li>
+    <li class="spell evoca palad"><a href="spells/wrathful_smite.html">Wrathful Smite</a></li>
   </ul>
   <li id="lvl2" class="level">Level II</li>
   <ul class="leveList">
+    <li class="spell evoca sorce wizar"><a href="spells/aganazzar_scorcher.html">Aganazzar's Scorcher</a></li>
+    <li class="spell abjur cleri palad"><a href="spells/aid.html">Aid</a></li>
+    <li class="spell trans sorce wizar"><a href="spells/alter_self.html">Alter Self</a></li>
+    <li class="spell encha ritua bards druid range"><a href="spells/animal_messenger.html">Animal Messenger</a></li>
+    <li class="spell abjur wizar"><a href="spells/arcane_lock.html">Arcane Lock</a></li>
   </ul>
   <li id="lvl3" class="level">Level III</li>
   <ul class="leveList">
@@ -146,6 +195,7 @@ Find: <input type="search" id="spellsSearch"/>
   </ul>
   <li id="lvl9" class="level">Level IX</li>
   <ul class="leveList">
+    <li class="spell conju sorce wizar"><a href="spells/wish.html">Wish</a></li>
   </ul>
 </ul>
 
