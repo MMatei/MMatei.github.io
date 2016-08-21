@@ -5,6 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" type="text/css" href="bestiary.css">
 <link rel="stylesheet" type="text/css" href="rules.css">
+<script>
+  function genScore() {
+    d1 = Math.ceil(Math.random() * 6)
+	d2 = Math.ceil(Math.random() * 6)
+	d3 = Math.ceil(Math.random() * 6)
+	d4 = Math.ceil(Math.random() * 6)
+	if (d1 <= d2 && d1 <= d3 && d1 <= d4)
+	  return d2 + d3 + d4
+	if (d2 <= d1 && d2 <= d3 && d2 <= d4)
+	  return d1 + d3 + d4
+	if (d3 <= d2 && d3 <= d1 && d3 <= d4)
+	  return d1 + d2 + d4
+	return d1 + d2 + d3
+  }
+  function genScores() {
+    document.getElementById("s1").innerHTML = genScore().toString()
+    document.getElementById("s2").innerHTML = genScore().toString()
+    document.getElementById("s3").innerHTML = genScore().toString()
+    document.getElementById("s4").innerHTML = genScore().toString()
+    document.getElementById("s5").innerHTML = genScore().toString()
+    document.getElementById("s6").innerHTML = genScore().toString()
+  }
+</script>
 <title>Rules</title>
 </head>
 
@@ -12,6 +35,7 @@
 <div align="center">
   <h1>Rules</h1><br/>
   <h3>Table of Contents</h3>
+  <h4><a href="#characterCreation">Creating a Character</a></h4>
   <h4><a href="#abilityScores">Ability Scores</a></h4>
   <h4><a href="#adventuring">Adventuring</a></h4>
   <h4><a href="#combatRules">Combat Rules</a></h4>
@@ -23,11 +47,28 @@
 <h4>Rounding Down</h4>
 <p>Whenever you divide a number in the game, always round down.</p>
 
+<br/><h1 id="characterCreation">Creating a Character</h1>
+<h4>Step 1: Choose a Race</h4>
+<p>See page 18 of the PHB for details on each race (and subraces). Your race determines your base speed, the languages you can speak, as well as a number of racial traits, all of which you should note on your character sheet. Some races may provide adjustments to your ability scores; keep these in mind for step 3.</p>
+<h4>Step 2: Choose a Class</h4>
+<p>Every adventurer has a certain vocation that determines his/her skills and talents. It is possible to multiclass your adventurer later on, although this is an advanced feature only recommended to experienced players. For the moment, however, you must choose one of the following classes: <a href="classes/barbarian.html">barbarian</a>, <a href="classes/bard.html">bard</a>, <a href="classes/cleric.html">cleric</a>, <a href="classes/druid.html">druid</a>, <a href="classes/fighter.html">fighter</a>, <a href="classes/monk.html">monk</a>, <a href="classes/paladin.html">paladin</a>, <a href="classes/ranger.html">ranger</a>, <a href="classes/rogue.html">rogue</a>, <a href="classes/sorcerer.html">sorcerer</a>, <a href="classes/warlock.html">warlock</a>, <a href="classes/wizard.html">wizard</a>. Your starting class determines your starting hit points, proficiencies and equipment. There might also be some features gained at level 1. Note all of these on your character sheet.</p>
+<h4>Step 3: Determine Ability Scores</h4>
+<p>Click the button to automatically generate ability scores for your character. You can assign each result to an ability of your choice. You should then add your racial adjustments. Afterwards, compute your ability modifier thusly: (10 - score) / 2, rounded down.</p>
+<button onclick="genScores()">Roll!</button>
+<table>
+  <tr><td id="s1"></td><td id="s2"></td><td id="s3"></td><td id="s4"></td><td id="s5"></td><td id="s6"></td></tr>
+</table>
+<h4>Step 4: Your Character's Personality</h4>
+<p>You should pick a personality you can identify with and keep it in mind in all interactions with other characters. If roleplaying isn't your thing, then you should have a character with your personality and play the game as if you are present there in the flesh. Personality isn't just important to increase immersion in the game, it is also tied into the <a href="#inspiration">Inspiration</a> mechanic, which gives your character an edge in situations that tug on a part of their personality. (And ultimately, D&amp;D is a game about characters in an adventure, not just a board game of tactical combat)</p>
+<p>Begin by selecting a background for your character (starting at page 128 in the PHB). The background may also provide some additional proficiencies, languages and equipment, which you should note on your character sheet. You should then select two personality traits, an ideal, a bond, and a flaw for your character. You may roll on the tables if you lack inspiration, but you are strongly encouraged to tailor the character to your liking. You can even customize your background if you wish, subject to DM approval.</p>
+<p>The DM will take notes on your personality for future reference, especially your flaw, which may be turned against you during the adventure. At this point, you also select the alignment of your character, which serves mostly as a statement of general intent regarding your personality. Depending on the setting, this alignment may or may not be important to the story. Regardless, you are free to act out your character in any way you choose. The DM will adjust your perceived alignment accordingly.</p>
+<p>For extra authenticity, you should also keep your ability scores in mind when roleplaying. Low intelligence might mean a lacklustre memory, and perhaps even a reduced ability to reason. Low charisma might mean that perhaps you're shy, or socially awkward, or just have an abrasive personality. Low wisdom might mean obliviousness to detail, recklessness or stubborness. Don't be afraid of playing a flawed character, for it might make the story more interesting in unexpected ways. And seeing a character overcome his/her limitations always makes for a good story.</p>
+
 <br/><h1 id="abilityScores">Ability Scores</h1>
 <h4>Advantage and disadvantage</h4>
 <p>When someone has advantage on a roll, it rolls two dice and selects the best result. When someone has disadvantage on a roll, it rolls two dice and selects the worst result.</p>
 <p>You cannot stack advantages or disadvantages on a roll (you never roll more than two d20s). If a situation brings both an advantage and a disadvantage, they cancel each other out. If you have a trait that allows you to reroll, you can only reroll one of the dice, but you choose which one.</p>
-<h4>Inspiration</h4>
+<h4 id="inspiration">Inspiration</h4>
 <p>If you are Inspired, you can take an Inspired Action: you can either gain advantage on an ability check, attack roll, or saving throw OR you can give advantage to someone else’s ability check, attack roll, or saving throw provided you are in a position to assist them directly in some way OR impose disadvantage on someone else’s ability check, attack roll, or saving throw provided you are in a position to hinder their action directly in some way. Whatever it is, the Inspired Action MUST somehow connect to one of your Personal Characteristics.</p>
 <p>When you aren't Inspired, you can Claim a Setback to become Inspired. To Claim a Setback, you must either impose disadvantage on one of your own ability checks, saving throws, or attack rolls OR make a decision that creates a significant story setback, obstacle, or hindrance, all based on one of your Personal Characteristics.</p>
 <p>The GM may Impose Setbacks. That is, in a scene during which one of your Characteristics should work against you, the GM can either impose disadvantage on a related roll or require you to take a detrimental action that somehow creates a story setback. If the player character isn't Inspired, it then becomes Inspired from the Imposed Setback. If the character is Inspired, they may describe how they overcome their Flaw or other trait and they are no longer Inspired.</p>
