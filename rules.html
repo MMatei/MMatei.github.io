@@ -47,6 +47,7 @@
 <h4>Rounding Down</h4>
 <p>Whenever you divide a number in the game, always round down.</p>
 
+
 <br/><h1 id="characterCreation">Creating a Character</h1>
 <h4>Step 1: Choose a Race</h4>
 <p>See page 18 of the PHB for details on each race (and subraces). Your race determines your base speed, the languages you can speak, as well as a number of racial traits, all of which you should note on your character sheet. Some races may provide adjustments to your ability scores; keep these in mind for step 3.</p>
@@ -63,6 +64,7 @@
 <p>Begin by selecting a background for your character (starting at page 128 in the PHB). The background may also provide some additional proficiencies, languages and equipment, which you should note on your character sheet. You should then select two personality traits, an ideal, a bond, and a flaw for your character. You may roll on the tables if you lack inspiration, but you are strongly encouraged to tailor the character to your liking. You can even customize your background if you wish, subject to DM approval.</p>
 <p>The DM will take notes on your personality for future reference, especially your flaw, which may be turned against you during the adventure. At this point, you also select the alignment of your character, which serves mostly as a statement of general intent regarding your personality. Depending on the setting, this alignment may or may not be important to the story. Regardless, you are free to act out your character in any way you choose. The DM will adjust your perceived alignment accordingly.</p>
 <p>For extra authenticity, you should also keep your ability scores in mind when roleplaying. Low intelligence might mean a lacklustre memory, and perhaps even a reduced ability to reason. Low charisma might mean that perhaps you're shy, or socially awkward, or just have an abrasive personality. Low wisdom might mean obliviousness to detail, recklessness or stubborness. Don't be afraid of playing a flawed character, for it might make the story more interesting in unexpected ways. And seeing a character overcome his/her limitations always makes for a good story.</p>
+
 
 <br/><h1 id="abilityScores">Ability Scores</h1>
 <h4>Advantage and disadvantage</h4>
@@ -87,7 +89,7 @@
 <h4>Strength</h4>
 <p>Strength measures both bodily strength and athletic training, the extent to which your strength can also be put to good use. Strength checks are used when pushing or pulling heavy objects, shoving enemies etc.</p>
 <p>For melee attacks and thrown weapons, you add your Str modifier to hit chance and damage.</p>
-<p id="encumbrance"><b><i>Carrying capacity.</i></b> You can carry or lift a maximum of 4 * Strength score kg. However, carrying more than half your maximum capacity adds one level of <a href="conditions/exhaustion.html">exhaustion</a> every half an hour.</p>
+<p id="encumbrance"><b><i>Carrying capacity.</i></b> You can carry or lift a maximum of 4 * Strength score kg. However, carrying more than half your maximum capacity adds one level of <a href="conditions/exhaustion.html">exhaustion</a> every half an hour. Your armor does not count towards your encumbrance, as even the heaviest of plate was designed as to evenly distribute its weight throughout the wearer's body.</p>
 <p>You can push or drag a weight at most twice your carrying capacity (so 8 * Strength score kg). Whenever this needs to be done in a hurry, a Strength check is required. A baseline DC is objectWeight/10, though this depends a lot on how much friction there is when pushing/dragging the object. For lifting, a decent baseline DC would be objectWeight/4.</p>
 <p>For each size over Medium, double a creature's max carrying/pushing/dragging/lifting capacity. For Tiny creatures, halve this amount.</p>
 <p><b><i>Athletics.</i></b> Covers climbing, jumping, swimming and other strenuous physical activity that is more about strength than agility.</p>
@@ -122,6 +124,7 @@
 <p><b><i>Performance.</i></b> Ability to act out a role, whether to deceive someone (outright lying is deception, not performance), or to entertain an audience.</p>
 <p><b><i>Persuasion.</i></b> Ability to influence someone to view you favorably. Note that to actually persuade someone, you still need convincing arguments (see <a href="#socialInteract">Social Interaction</a>).</p>
 
+
 <br/><h1 id="adventuring">Adventuring</h1>
 <h4>Long Jump</h4>
 <p>If you run for at least 3m, then you can jump over 0.25m * Strength score. If you make a standing jump, then you can clear only half that distance. For purposes of movement speed in a turn, every meter jumped counts as a meter of normal movement. If the landing is expected to be difficult, DC 10 Acrobatics to avoid falling prone.</p>
@@ -142,6 +145,23 @@
 <p>A character needs half a kg of food per day and can go without food for a period equal to 3 + Constitution modifier (a minimum of 1) days. For every subsequent day without food, the character takes one level of exhaustion.</p>
 <p>A character needs to drink 2 liters of water (or an appropriate substitute) per day, or 4 liters if the weather is hot. If a character drinks only half the required water, DC Con 15 or take a level of exhaustion. If even less water is available, then the character automatically takes a level of exhaustion, two if the characer is already exhausted.</p>
 <p>For every size above Medium, a character consumes twice as much food and water. A Tiny character's consumption is halved, on the other hand.</p>
+
+<h4>Traveling through wilderness</h4>
+<p>The world of D&amp;D is a dangerous one, and travel often involves great peril for the party, even moreso in wilderness, where there is a danger of getting lost or low on food after days of wandering. The following rules only apply in situations where there is a significant risk of hostile encounters, or of a comparable loss of resources.</p>
+<p>For any travel, the following factors are determined by the GM: Danger, Navigation, Resources and Discoveries. These factors can be gleaned by the players from research or interactions with NPCs, but will never be explicitly stated. Note that these factors need not be constant for the whole trip. The gentle meadow might give way to a treacherous forest filled with goblins.</p>
+<p><b><i>Danger.</i></b> An estimate of how many random encounters are expected in a day of travel. It is 1 for regions regularly policed by a civilized faction or barren locations with few creatures; 2 for untamed wilderness; 3 for enemy territory (inhabited by intelligent and hostile creatures); 4 for regularly patrolled enemy territory; 5 for territory filled with monsters that can easily detect intruders and are actively trying to stop them (this is reserved for the most extreme of environments, such as Hell).</p>
+<p><b><i>Navigation.</i></b> A measure of how difficult it is to find and follow landmarks. It will be used as DC, and so it ranges from 0 to 30 (or beyond in rare, extreme circumstances). If the party must follow a road, or a river, this is 0, but if it must navigate a treacherous desert, it is instead 30.</p>
+<p><b><i>Resources.</i></b> A measure of how difficult it is to forage for food and water. It will be used as a DC, and so it ranges from 0 in lush riverlands, to 30 in deserts, to 99 in environments that are completely barren.</p>
+<p><b><i>Discovery.</i></b> The chance to stumble across something interesting in the distance, that the party might want to explore. A discovery generally contains some reward for the party.</p>
+<p><b><i>Pace.</i></b> At the beggining of each day, the party must decide at what pace to travel: slow, normal or fast. This decision can be revisited at any point, affecting the total traveled for the day accordingly. At a slow pace, a party travels only 2/3 the normal distance, but it moves stealthily and carefully, providing them with advantage on Perception and Navigation checks; conversely, enemies suffer disadvantage on Perception checks to spot the party. At a normal pace the party suffers disadvantage on Forage checks. At a fast pace, the party has no possibility to forage, it suffers disadvantage on Perception and Navigation checks and enemies have advantage on Perception checks to spot the party.</p>
+<p>At the beginning of every day of travel, the GM secretly rolls six d6, one for every time of day: morning, afternoon, evening, dusk, midnight, predawn. For each one that shows the Danger number or less, an encounter <i>might</i> happen. The GM also rolls another d6; if it is equal or lower to the Discovery number, a tantalizing opportunity will present itself during the day.</p>
+<p>Now, for each encounter that might happen, check for who spots whom and run it accordingly. Since neither party might notice the other, it is possible for such an encounter to not happen at all. Encounters need not be battles; they can also be traps, puzzles, interesting choices etc. A short rest is always assumed to have happened before encounters.</p>
+<p>Once the encounters for daytime (morning to dusk) are done, the party sets camp to get some sleep. They can also set camp sooner, but that would waste what remains of the day. The party can also choose to press on without setting camp and thus increase the distance traveled by half, but they immediately take a level of exhaustion.</p>
+<p>When the day ends, the GM does the bookeeping for the previous day. First, determine if the party is lost by rolling (in secret) with the bonuses of the best navigator against the Navigation DC. Failure means the party is lost (they just don't know it yet). If the party isn't lost, register the amount traveled during the day as progress (no progress otherwise). Progress, as well as travel time, is measured in days. If the party spent some time on a discovery, subtract an appropriate number from their progress (usually 1/3).</p>
+<p>If lost, a subsequent successful Navigation roll will reveal that the party has been lost (and for how long). Progress will be accumulated once again. At the GM's discretion, the party might get lost in a certain direction and therefore encounter certain features on the map. Under a more meticulous system, being lost adds progress in a different direction, thus necessitating a new calculation for travel time.</p>
+<p>After logging progress, everyone rolls for forage (unless the party traveled at a fast pace). Characters that failed have to consume one ration for the day. If the whole party fails to forage, then the personal water reserves aren't replenished. Note that extra water reserves the party might have are only replenished if there are significant bodies of water in the environment.</p>
+<p>Finally, the night time encounters play out. Assume everyone keeps watch for equal amounts of time and roll randomly to see who is awake. If the enemy spots the camp, then the awake character must succeed on a Perception check to avoid an ambush.</p>
+
 <h4 id="socialInteract">Social Interaction</h4>
 <p>It may be the case that the person you're interacting with has objections to helping you out. If that's the case, then the PCs must somehow overcome these objections (convince the person).</p>
 <p>The NPC starts with one or more objections, each with a score assigned, defining how strong the objection is. To surpass these objections, the PCs must either address an objection (thus lowering its score) OR provide an incentive to help. The better the argument, the greater the score it has. But to carry this argument across, a PC has to rely on Persuasion or Intimidation (the latter can only be used to provide an incentive of fear – although it is only useful when the person being threatened has something to fear from the PCs). Both sides may employ falsehood or misinformation in the discussion (if you're convinced a false statement is true, it's not lying). In this case, success is determined by a contest of Deception vs Insight.</p>
@@ -161,6 +181,7 @@
 <p>In order to use a magic item, you must attune to it, which means spending a short rest, concentrating on the item, uninterrupted (thus negating all other benefits of a short rest). Once this is done, you can access all of the item's properties (as well as its downsides...).</p>
 <p>An item can be attuned to only one creature at a time. A creature can be attuned to no more than three magic items at any given time, and you can attune yourself to only one item during a short rest.</p>
 <p>Your attunement to an item ends when the item has been more than 30m away from you for 24 hours and when you die. You can also voluntarily end your attunement to an item with another short rest. Some items, however, are cursed and cannot be relinquished without the help of spells, such as <i>remove curse</i>.</p>
+
 
 <br/><h1 id="combatRules">Combat Rules</h1>
 <p><b>Step 1.</b> Determine what each side intends to achieve and how it intends to achieve it.</p>
@@ -259,6 +280,7 @@
 <h4>Instant kills</h4>
 <p>If an enemy is unable to defend himself and you are armed with a lethal melee weapon, then you can kill him instantly, without any checks. A sleeping target can be killed instantly with just a Stealth check, rolled with advantage, against the target's Passive Perception. Targets who are completely at ease (unaware there is a foe around) can also be instantly killed with a Stealth check against the target's Passive Perception (this is separate from the check to Hide; and in this case you receive no advantages from being obscured or invisible).</p>
 
+
 <br/><h1 id="spellcasting">Spellcasting</h1>
 <p>Because of the mental focus and precise gestures required for spellcasting, you must be proficient with the armor you are wearing to cast a spell.</p>
 <p>The effects of the same spell don't overlap if the spell is cast multiple times on the same target. Different spells can overlap, however.</p>
@@ -306,6 +328,7 @@
 <p>Illusion spells deceive the senses or minds of others. They cause people to see things that aren't there, to miss things that are there, to hear phantom noises, or to remember things that never happened. Some illusions create phantom images that any creature can see, but the most insidious illusions plant an image directly in the mind of a creature.</p>
 <p><b><i>Necromancy</i></b> spells manipulate the energies of life and death. Such spells can grant an extra reserve of life force, drain the life energy from another creature, create undead, or even bring the dead back to life. Its effects may seem unnatural to most people, so check setting details for information on how necromancy is perceived throughout society.</p>
 <p><b><i>Transmutation</i></b> spells change the properties of a creature, object, or environment. They might turn an enemy into a harmless creature. bolsler the strength of an ally, make an object move at the caster's command, or enhance a creature's innate healing abililies to rapidly recover from injury.</p>
+
 
 <br/><h1 id="equipment">Equipment</h1>
 <h4>Coinage</h4>
