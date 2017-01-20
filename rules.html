@@ -8,16 +8,16 @@
 <script>
   function genScore() {
     d1 = Math.ceil(Math.random() * 6)
-  d2 = Math.ceil(Math.random() * 6)
-  d3 = Math.ceil(Math.random() * 6)
-  d4 = Math.ceil(Math.random() * 6)
-  if (d1 <= d2 && d1 <= d3 && d1 <= d4)
-    return d2 + d3 + d4
-  if (d2 <= d1 && d2 <= d3 && d2 <= d4)
-    return d1 + d3 + d4
-  if (d3 <= d2 && d3 <= d1 && d3 <= d4)
-    return d1 + d2 + d4
-  return d1 + d2 + d3
+    d2 = Math.ceil(Math.random() * 6)
+    d3 = Math.ceil(Math.random() * 6)
+    d4 = Math.ceil(Math.random() * 6)
+    if (d1 <= d2 && d1 <= d3 && d1 <= d4)
+      return d2 + d3 + d4
+    if (d2 <= d1 && d2 <= d3 && d2 <= d4)
+      return d1 + d3 + d4
+    if (d3 <= d2 && d3 <= d1 && d3 <= d4)
+      return d1 + d2 + d4
+    return d1 + d2 + d3
   }
   function genScores() {
     document.getElementById("s1").innerHTML = genScore().toString()
@@ -46,15 +46,18 @@
 <p>D&amp;D was designed with grid-based combat in mind. Therefore, in all circumstances related to combat (abilities, spells, effects, speed etc), distance will be measured in squares. As a contingency for freeform scenarios, the distance in meters will be displayed within brackets. For reference, a square was originally defined as 5 by 5 feet, which roughly translates to 1.5 by 1.5 meters (error is negligible for the small distances involved in the typical combat).</p>
 <h4>Rounding Down</h4>
 <p>Whenever you divide a number in the game, always round down.</p>
+<h4>Advantage and disadvantage</h4>
+<p>When someone has advantage on a roll, he rolls two dice and selects the best result. When someone has disadvantage on a roll, he rolls two dice and selects the worst result.</p>
+<p>You cannot stack advantages or disadvantages on a roll (you never roll more than two d20s). If a situation brings both an advantage and a disadvantage, they cancel each other out. If you have a trait that allows you to reroll, you can only reroll one of the dice, but you choose which one.</p>
 
 
 <br/><h1 id="characterCreation">Creating a Character</h1>
 <h4>Step 1: Choose a Race</h4>
-<p>See page 18 of the PHB for details on each race (and subraces). Your race determines your base speed, the languages you can speak, as well as a number of racial traits, all of which you should note on your character sheet. Some races may provide adjustments to your ability scores; keep these in mind for step 3.</p>
+<p>Choose one of the following races: <a href="races/dragonborn.html">dragonborn</a>, <a href="races/dwarf.html">dwarf</a>, <a href="races/elf.html">elf</a>, <a href="races/halfling.html">halfling</a>, <a href="races/human.html">human</a>, <a href="races/half_elf.html">half-elf</a>, <a href="races/half_orc.html">half-orc</a> or <a href="races/tiefling.html">tiefling</a>. Your race determines your base speed, the languages you can speak, as well as a number of racial traits, all of which you should note on your character sheet. Some races may provide adjustments to your ability scores; keep these in mind for step 3.</p>
 <h4>Step 2: Choose a Class</h4>
 <p>Every adventurer has a certain vocation that determines his/her skills and talents. It is possible to multiclass your adventurer later on, although this is an advanced feature only recommended to experienced players. For the moment, however, you must choose one of the following classes: <a href="classes/barbarian.html">barbarian</a>, <a href="classes/bard.html">bard</a>, <a href="classes/cleric.html">cleric</a>, <a href="classes/druid.html">druid</a>, <a href="classes/fighter.html">fighter</a>, <a href="classes/monk.html">monk</a>, <a href="classes/paladin.html">paladin</a>, <a href="classes/ranger.html">ranger</a>, <a href="classes/rogue.html">rogue</a>, <a href="classes/sorcerer.html">sorcerer</a>, <a href="classes/warlock.html">warlock</a>, <a href="classes/wizard.html">wizard</a>. Your starting class determines your starting hit points, proficiencies and equipment. There might also be some features gained at level 1. Note all of these on your character sheet.</p>
 <h4>Step 3: Determine Ability Scores</h4>
-<p>Click the button to automatically generate ability scores for your character. You can assign each result to an ability of your choice. You should then add your racial adjustments. Afterwards, compute your ability modifier thusly: (10 - score) / 2, rounded down.</p>
+<p>Click the button to automatically generate ability scores for your character. You can assign each result to an ability of your choice. You should then add your racial adjustments. Afterwards, determine your ability modifier: (10 - score) / 2, rounded down.</p>
 <button onclick="genScores()">Roll!</button>
 <table>
   <tr><td id="s1"></td><td id="s2"></td><td id="s3"></td><td id="s4"></td><td id="s5"></td><td id="s6"></td></tr>
@@ -67,9 +70,49 @@
 
 
 <br/><h1 id="abilityScores">Ability Scores</h1>
-<h4>Advantage and disadvantage</h4>
-<p>When someone has advantage on a roll, it rolls two dice and selects the best result. When someone has disadvantage on a roll, it rolls two dice and selects the worst result.</p>
-<p>You cannot stack advantages or disadvantages on a roll (you never roll more than two d20s). If a situation brings both an advantage and a disadvantage, they cancel each other out. If you have a trait that allows you to reroll, you can only reroll one of the dice, but you choose which one.</p>
+<p>The six ability scores are Strength, Dexterity, Constitution, Memory, Intuition and Charisma. These reflect the raw physical and mental capacities of your character, and they are numbers ranging from a minimum of 1 (meaning complete and utter lack of said ability), to 10 (the ability of the average human), to 20 (the peak of ability for most mortal heroes) and even more for some very powerful beings.</p>
+<p>Every ability score has a modifier, which is equal to the score divided by 2, rounded down. Generally, only the modifier is important in the game.</p>
+<h4>Skills</h4>
+<p>Each attribute (except Constitution) has associated skills. An associated skill receives a bonus from the parent attribute's modifier. It is possible however, at the GM's discretion, to associate a skill with a different attribute, if the situation justifies it. For example, intimidating someone through a show of strength should be an Intimidation (Strength) check, instead of the usual Intimidation (Charisma).</p>
+<h4>Strength (STR)</h4>
+<p>Strength measures both bodily strength and athletic training, the extent to which your strength can also be put to good use. Strength checks are used when pushing or pulling heavy objects, shoving enemies etc.</p>
+<p id="encumbrance"><b><i>Carrying capacity.</i></b> You can comfortably carry a maximum of 2 * Strength kg. If needed, you can carry up to 50% more, but you suffer one level of <a href="conditions/exhaustion.html">exhaustion</a> every half an hour. Tiny creatures can carry only half this amount. For every size over Medium, the carrying capacity is doubled.</p>
+<p>If you need to push, drag or lift a heavy object in a hurry, a Strength check is required. A baseline DC is 10, +1 for every 4kg above 20.</p>
+<p><b><i>Athletics.</i></b> Covers climbing, jumping, swimming and other strenuous physical activity where strength is the most important component. Athletics is quite often also used with Constitution whenever it's a question of phsysical endurance.</p>
+<p><b><i>Melee.</i></b> Covers all types of hand to hand fighting. It is used whenever attacking someone with a melee weapon, as a modifier to hit and damage. Weapons with the [Finesse] tag rely on Dexterity instead.</p>
+<h4>Dexterity (DEX)</h4>
+<p>Dexterity measures the ability to be agile, nimble, or move quietly. It also covers talent in actions that require precision, such as disarming traps, picking locks, or manufacturing and manipulating delicate objects. For ranged weapons (except throwing weapons) and melee weapons with the finesse property, add your Dexterity modifier to hit chance and damage. Some armors allow you to add part of your Dexterity modifier to AC. When unarmored, you add your whole Dexterity modifier to your AC.</p>
+<p><b><i>Acrobatics.</i></b> Used for acrobatic stunts (flips, somersaults, rolls etc) and for keeping one's footing on slippery or unsteady terrain (such as a tight rope, or a quaking surface).</p>
+<p><b><i>Archery.</i></b> Used for all types of ranged weapons. Ranged attacks with [Thrown] weapons use Strength instead.</p>
+<p><b><i>Mechanics.</i></b> Covers proficiency with thieves' tools, and thus the ability to pick locks, disarm traps, and tinker with mechanical devices.</p>
+<p><b><i>Sleight of hand.</i></b> This covers all sorts of trickeries and subtle movements that you want to go unnoticed, such as pickpocketing, or drawing a knife without being noticed.</p>
+<p><b><i>Stealth.</i></b> Used when you want to hide from somebody.</p>
+<h4>Constitution (CON)</h4>
+<p>Measures one's vitality and ability to withstand exertion, as well as toxins, poisons and diseases. No skills are associated with it, but some situations may call for a Constitution check, such as trying to march all day in blistering heat.</p>
+<p>For every level you have, you add your Constitution modifier to your max hp. This property is constantly updated, so if you temporarily gain or lose Constitution points, you have to adjust your max hp accordingly.</p>
+<h4>Memory (MEM)</h4>
+<p>The character's capacity to store knowledge, as well as the skill to put that knowledge to good use. A character with good memory won't just recite a book on elven history - he will point out the specific passage that is relevant to the problem at hand. However, the actual task of reasoning on the available information is left to the player. Memory checks are used to appraise an item, win at a game of skill, forge documents, or concoct a suitable disguise.</p>
+<p><b><i>Arcana.</i></b> Deals with knowledge about anything magical in nature: spells, rituals, other planes of existence and their inhabitants. It also measures one's ability to wield arcane magic, increasing one's spell DC and chance to hit with a spell. This skill is only relevant to Wizards.</p>
+<p><b><i>Craft.</i></b> Deals with any type of crafting, from improvising a trap in a dungeon to forging a masterwork sword.</p>
+<p><b><i>History.</i></b> Your knowledge about the history of the world (anything that can be found in a historic text or in bardic poems). It has some overlap with Arcana and Religion, but only in regards to historical facts.</p>
+<p><b><i>Linguistics.</i></b> Your ability to pick up new (or slightly different) languages. With enough study or checks for the same language, you might even become fluent in it.</p>
+<p><b><i>Medicine.</i></b> Ability to care for the sick and stabilize unconscious characters.</p>
+<p><b><i>Nature.</i></b> Your knowledge about the natural world: plants, beasts, terrain and weather cycles.</p>
+<p><b><i>Religion.</i></b> Your knowledge about the Deities of the world, their rituals, priesthoods and philosophy. Since some religious artifacts are magical in nature, it might overlap with Arcana, and both checks would be valid for such information.</p>
+<h4>Intuition (INT)</h4>
+<p>A combination of life experience, perception and attunement to the environment. It is a measure of your attention to what is going on and can be actively employed to discern the unusual.</p>
+<p><b><i>Animal handling.</i></b> Your capacity to calm down an animal, tame it, or understand its behavior.</p>
+<p><b><i>Attunement.</i></b> Determines the strength of your connection to the divine or natural power you serve, and from where you draw your magic. It increases your spell DC and chance to hit with a spell. This skill is only relevant to Clerics, Druids and Rangers.</p>
+<p><b><i>Insight.</i></b> Determine the intentions and emotions of the creature you are interacting with, for example to determine whether they are lying.</p>
+<p><b><i>Perception.</i></b> Used when trying to spot or detect something. Note: all items (worthy of note) that are in plain sight will be described without any checks. A perception check is required only to spot some small detail that might go unnoticed by the casual observer, or to search a wide space for something (specificity increases the chances of success).</p>
+<p><b><i>Survival.</i></b> Ability to survive in wilderness, to find food, water and shelter. It is also the ability to track a creature and hunt.</p>
+<h4>Charisma (CHA)</h4>
+<p>Measures the ability to influence others and make a positive impact on them. It is very important in social interactions, and can also be used to gather rumors from a crowd. Bards, paladins, sorcerers and warlocks add their Cha modifier to spellcasting DC and chance to hit with a spell.</p>
+<p><b><i>Deception.</i></b> Your ability to hide information or outright lie in a social interaction.</p>
+<p><b><i>Intimidation.</i></b> Attempting to influence someone through threats, hostile actions and implied violence.</p>
+<p><b><i>Performance.</i></b> Ability to act out a role, whether to deceive someone (outright lying is deception, not performance), or to entertain an audience.</p>
+<p><b><i>Persuasion.</i></b> Ability to influence someone to view you favorably. Note that to actually persuade someone, you still need convincing arguments (see <a href="#socialInteract">Social Interaction</a>).</p>
+<p><b><i>Will.</i></b> Used to resist compulsions, but more important as the source of magic for Bards, Paladins, Sorcerers and Warlocks, who wield the magic found in themselves. For this type of casting, it increases spell DC and chance to hit.</p>
 <h4 id="inspiration">Inspiration</h4>
 <p>If you are Inspired, you can take an Inspired Action: you can either gain advantage on an ability check, attack roll, or saving throw OR you can give advantage to someone else’s ability check, attack roll, or saving throw provided you are in a position to assist them directly in some way OR impose disadvantage on someone else’s ability check, attack roll, or saving throw provided you are in a position to hinder their action directly in some way. Whatever it is, the Inspired Action MUST somehow connect to one of your Personal Characteristics.</p>
 <p>When you aren't Inspired, you can Claim a Setback to become Inspired. To Claim a Setback, you must either impose disadvantage on one of your own ability checks, saving throws, or attack rolls OR make a decision that creates a significant story setback, obstacle, or hindrance, all based on one of your Personal Characteristics.</p>
@@ -84,45 +127,6 @@
 <p>If it is possible and realistic for a character to help another in accomplishing a task, then the helped character makes his roll with advantage. More helping hands will confer no further bonus. The helper must also justify how he is going to be of use, and if skilled work is necessary, then the helper must be proficient in the relevant skill. (For example, if you want to help someone to disarm a bomb, but you don't have a clue about disarming bombs, then you're useless)</p>
 <h4>Group Checks</h4>
 <p>Some situations may require the whole group to take a check (like traversing a treacherous swamp). In that case, all characters must roll separately (no aid is permitted). If at least half of the party succeeds, then the whole party succeeds, as we're assuming that those who fail are helped by those who succeeded.</p>
-<h4>Skills</h4>
-<p>Each attribute (except Constitution) has associated skills. An associated skill receives a bonus from the parent attribute's modifier. It is possible however, at the GM's discretion, to associate a skill with a different attribute, if the situation justifies it. For example, intimidating someone through a show of strength should be an Intimidation (Strength) check, instead of the usual Intimidation (Charisma).</p>
-<h4>Strength</h4>
-<p>Strength measures both bodily strength and athletic training, the extent to which your strength can also be put to good use. Strength checks are used when pushing or pulling heavy objects, shoving enemies etc.</p>
-<p>For melee attacks and thrown weapons, you add your Str modifier to hit chance and damage.</p>
-<p id="encumbrance"><b><i>Carrying capacity.</i></b> You can carry or lift a maximum of 4 * Strength score kg. However, carrying more than half your maximum capacity adds one level of <a href="conditions/exhaustion.html">exhaustion</a> every half an hour. Your armor does not count towards your encumbrance, as even the heaviest of plate was designed as to evenly distribute its weight throughout the wearer's body.</p>
-<p>You can push or drag a weight at most twice your carrying capacity (so 8 * Strength score kg). Whenever this needs to be done in a hurry, a Strength check is required. A baseline DC is objectWeight/10, though this depends a lot on how much friction there is when pushing/dragging the object. For lifting, a decent baseline DC would be objectWeight/4.</p>
-<p>For each size over Medium, double a creature's max carrying/pushing/dragging/lifting capacity. For Tiny creatures, halve this amount.</p>
-<p><b><i>Athletics.</i></b> Covers climbing, jumping, swimming and other strenuous physical activity that is more about strength than agility.</p>
-<h4>Dexterity.</h4>
-<p>Dexterity measures the ability to be agile, nimble, or move quietly. It also covers talent in actions that require precision, such as disarming traps, picking locks, or manufacturing and manipulating delicate objects. For ranged weapons (except throwing weapons) and melee weapons with the finesse property, add your Dexterity modifier to hit chance and damage. Some armors allow you to add part of your Dexterity modifier to AC. When unarmored, you add your whole Dexterity modifier to your AC.</p>
-<p><b><i>Acrobatics.</i></b> Used for acrobatic stunts (flips, somersaults, rolls etc) and for keeping one's footing on slippery or unsteady terrain (such as a tight rope, or a quaking surface).</p>
-<p><b><i>Sleight of hand.</i></b> This covers all sorts of trickeries, subtle movements that you want to go unnoticed, such as pickpocketing, but also the art of trap disarming and lock picking (for these latter two activities, you need thieves' tools, however, or at least a similar set of objects, which can be improvised).</p>
-<p><b><i>Stealth.</i></b> Used when you want to hide from somebody.</p>
-<p><b><i>Initiative.</i></b> Initiative is a Dexterity roll, but no proficiency bonus applies.</p>
-<h4>Constitution</h4>
-<p>Measures one's vitality and ability to withstand exertion, as well as toxins, poisons and diseases. No skills are associated with it, but some situations may call for a Constitution check, such as trying to march all day in blistering heat.</p>
-<p>For every level you have, you add your Constitution modifier to your max hp. This property is constantly updated, so if you temporarily gain or lose Constitution points, you have to adjust your max hp accordingly.</p>
-<h4>Intelligence</h4>
-<p>Measures one's memory and ability to reason. However, it does NOT provide a substitute for the player's own intelligence. That is to say, there is no Intelligence roll for the solution to a puzzle; it is the players, not the character, who have to figure that out. The character's intelligence will only deal with things that are impossible for the players to see/know, like history, lore, or subtle clues in the environment.</p>
-<p>Intelligence checks are used to appraise an item, win at a game of skill, forge documents, or concoct a suitable disguise. Wizards add their Int modifier to spellcasting DC and chance to hit with a spell.</p>
-<p><b><i>Arcana.</i></b> Deals with knowledge about spells, magic items, rituals, and traditions, as well as the planes of existence and their inhabitants.</p>
-<p><b><i>History.</i></b> Your knowledge about the history of the world.</p>
-<p><b><i>Investigation.</i></b> Deals with making deductions from the environment, though it stops short of giving full answers. For example, it might reveal that the troll seems to be regenerating after every blow, or that the murder weapon is most likely an axe, but it won't reveal that you need fire or acid to stop the regeneration, or that the murder evidence points to Bob the woodsman. In short, a successful investigation roll will provide some extra hints that aren't exactly apparent to someone who is only imagining the scene; it is, in a way, a step above Perception.</p>
-<p><b><i>Nature.</i></b> Your knowledge about the natural world: plants, beasts, terrain and weather cycles.</p>
-<p><b><i>Religion.</i></b> Your knowledge about the Deities of the world, their rituals, priesthoods and philosophy. In regards to planes of existence, it overlaps with Arcana somewhat, and both checks are valid for such information.</p>
-<h4>Wisdom</h4>
-<p>Measures how well you are attuned with the world around you, and also describes a degree of life experience. It is employed when interacting with other beings, as well as a measure of your attention to what is going on. Clerics, druids and rangers add their Wis modifier to spellcasting DC and chance to hit with a spell.</p>
-<p><b><i>Animal handling.</i></b> Your capacity to calm down an animal, tame it, or intuit its emotions.</p>
-<p><b><i>Insight.</i></b> Determine the intentions and emotions of the creature you are interacting with, for example to determine whether they are lying.</p>
-<p><b><i>Medicine.</i></b> Ability to care for the sick and stabilize unconscious characters.</p>
-<p><b><i>Perception.</i></b> Used when trying to spot or detect something. Note: all items (worthy of note) that are in plain sight will be described without any checks. A perception check is required only to spot some small detail that might go unnoticed by the casual observer, or to search a wide space for something (specificity increases the chances of success).</p>
-<p><b><i>Survival.</i></b> Ability to survive in wilderness, to find food, water and shelter. It is also the ability to track a creature and hunt.</p>
-<h4>Charisma</h4>
-<p>Measures the ability to influence other and make a positive impact on them. It is very important in social interactions, and can also be used to gather rumors from a crowd. Bards, paladins, sorcerers and warlocks add their Cha modifier to spellcasting DC and chance to hit with a spell.</p>
-<p><b><i>Deception.</i></b> Your ability to hide information or outright lie in a social interaction.</p>
-<p><b><i>Intimidation.</i></b> Attempting to influence someone through threats, hostile actions and implied violence.</p>
-<p><b><i>Performance.</i></b> Ability to act out a role, whether to deceive someone (outright lying is deception, not performance), or to entertain an audience.</p>
-<p><b><i>Persuasion.</i></b> Ability to influence someone to view you favorably. Note that to actually persuade someone, you still need convincing arguments (see <a href="#socialInteract">Social Interaction</a>).</p>
 
 
 <br/><h1 id="adventuring">Adventuring</h1>
@@ -218,8 +222,8 @@
 <p>If you have an ability that enables you to score a critical hit on a roll of less than 20, the critical hit doesn't enable you to hit an enemy that you otherwise couldn't.</p>
 <p>If you hit the enemy, then you roll for damage. See your attack's description for the number and type of dice to use. If the attack hits more than one target, you roll just once for all of them. Your proficiency and attribute modifiers are also added to damage output. If you scored a critical hit, then you add the maximum value you can roll to the damage output (thus, 2d6 + 1 would become 2d6 + 12 + 1).</p>
 <p>As an alternative to one of your attacks, you can take one of the following options:</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Grapple.</b> The target of your grapple must be no more than one size larger than you, and he must be within your reach. Using at least one free hand, you try to seize the target with an Athletics check contested by the target's Athletics or Acrobatics check (the target chooses the ability to use). If you succeed, the target is <a href="conditions/grappled.html">grappled</a>. You can release the target whenever you like (no action required).</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Shove.</b> The enemy must be no more than one size larger than you, and he must be within your reach. You make an Athletics contest against the target's Athletics or Acrobatics (the target chooses the ability to use). If you succeed, you can either push the enemy 1 square away or knock him prone. You have advantage if you have the high ground (a slope at least 30&deg;). You have disadvantage if the enemy has the high ground.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Grapple.</b> The target of your grapple must be no more than one size larger than you, and he must be within your reach. Using at least one free hand, you try to seize the target; roll Athletics DC 10 + enemy Athletics modifier. If you succeed, the target is <a href="conditions/grappled.html">grappled</a>. You can release the target whenever you like (no action required).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Shove.</b> The enemy must be no more than one size larger than you, and he must be within your reach. Roll Athletics DC 10 + enemy Athletics modifier. If you succeed, you can either push the enemy 1 square away or knock him prone. You have advantage if you have the high ground (at least half a meter above your foe). You have disadvantage if the enemy has the high ground.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Dual wielding.</b> Attack with a light melee or throwing weapon that you're holding in one hand, then use your bonus action to attack with a different light melee or throwing weapon that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Disarm.</b> Use your weapon to knock the enemy's weapon (or an object he might be holding) from his hands. Make a contest of your attack roll (with disadvantage) against the enemy's Athletics or Acrobatics. If you are larger, you gain +2 to the disarm roll (per level of difference); if you are smaller, you're penalized by -2. Recovering the weapon is an action, and it prompts a contest (attack roll against Acrobatics) if an enemy is facing you and willing to contest.</p>
 <p><b><i>Cast a spell.</i></b> See the spell description for the time it takes to cast the spell. Some spells use a bonus action, or a reaction, most require one action, while others consume actions over a certain number of rounds. Spells that require an attack roll to hit can do critical damage if you roll a 20.</p>
@@ -234,7 +238,7 @@
 <p><b><i>Use Object.</i></b> Interact with an object, like pulling lever, throwing a rock etc.</p>
 <h4>Bonus Actions</h4>
 <p>Some abilities or spells require a bonus action. You can only take one bonus action during your turn. Its timing, however, is up to you.</p>
-<h4>Other activities</h4>
+<h4>Free actions</h4>
 <p>Simple actions, such as opening a door, unsheathing your sword, signaling your allies, or uttering a short phrase are free and can be done at any time during your turn.</p>
 <h4>Reactions</h4>
 <p>During your turn, you get one reaction, which is a short response to some trigger. Some abilities are employed during a reaction; the most common example is the attack of opportunity. The Ready action also makes use of the reaction.</p>
@@ -319,15 +323,16 @@
 <p><b><i>Cylinder.</i></b> The point of origin lies at the base of the cylinder and is included in the area of effect. The cylinder has a radius, as well as length. Over half of a square must lie within the area of effect for it the effect to apply there.</p>
 <p><b><i>Sphere.</i></b> The sphere extends outwards from its point of origin. Over half of a square must lie within the area of effect for it the effect to apply there.</p>
 <h4>Schools of Magic</h4>
-<p>Somewhat arbitrarily, wizards have divided magic into 8 different schools, based on their effects. No distinction is made based on the source of the magic that power the spell, which fuels considerable controversy over this classification. Nevertheless, this is the widely accepted theory.</p>
-<p><b><i>Abjuration</i></b> spells are protective in nature, though some of them have aggressive uses. They create magical barriers, negate harmful effects, harm trespassers, or banish creatures to other planes of existence.</p>
-<p><b><i>Conjuration</i></b> spells involve the transportation of objects and creatures from one location to another, as well as the creation of matter from the Weave. Some spells summon creatures or objects to the caster's side, whereas others allow the caster to teleport to another location.</p>
-<p><b><i>Divination</i></b> spells reveal information, whether in the form of secrets long forgotten, glimpses of the future, the locations of hidden things, the truth behind illusions, or visions of distant people or places.</p>
+<p>In the oldest days of recorded history, magicians agreed that spells should be categorized according to the level upon which it acted: Materium (the physical world), Aetherium (energy) or Aidos (the mind, the soul and the other highest concepts that could not be readily explained). They then further divided magic according to its source of power. More recently, however, ingenious archmages have proved that, at least empirically, there is no measurable difference in the effects of magic that depend on its source. Therefore, a new classification was adopted, based solely on what the spell affects and what the end result is.</p>
+<p>While stubborn hold-outs remain, especially among clerics, who like to imagine that their divine magic is somehow better, the vast majority of the scholars agree that magic can be neatly divided into eight schools:</p>
+<p><b><i>Abjuration</i></b> spells are sometimes called anti-magic, since they're all about cancelling other magic and denying its effects. It is therefore protective in nature; it can create magical barriers, remove harmful magics, stop trespassers, or banish creatures to their home plane of existence.</p>
+<p><b><i>Animancy</i></b> deals with the mysterious energies of life and death (biotic and necrotic energy, which stand in opposition to one another). Such spells can heal as well as harm, transfer life energy from a creature to another, resurrect the dead, or even animate their corpses using the forces of death. While massively helpful, some cultures consider parts of it or even the entire field as taboo, since it manipulates forces some consider are not meant for the mortals to tamper with. Necromancy in particular, meaning the use of necrotic energy, is shunned or outright banned in most of the world.</p>
+<p><b><i>Conjuration</i></b> spells involve the creation and destruction of matter in all its forms. Most often it is used to create useful objects, harmful materials that can be thrown or dropped on enemies, to summon helpful creatures, but it can also be used to unmake and remake an object in different places, thus providing an instantaneous mode of travel. Conjuration deals exclusively with the Materium.</p>
+<p><b><i>Divination</i></b> spells reveal information, whether in the form of secrets long forgotten, glimpses of the future, the locations of hidden things, the truth behind illusions, or visions of distant people or places. It works in Aidos, particularly in the areas over which mortals have yet gleaned little knowledge. As such, it is the least understood and least appreciated of the schools of magic.</p>
 <p><b><i>Enchantment</i></b> spells affect the minds of others, influencing or controlling their behavior. Such spells can make enemies see the caster as a friend, force creatures to take a course of action, or even control another creature like a puppet.</p>
-<p><b><i>Evocation</i></b> spells manipulate magical energy to produce a desired effect. Some call up blasts of fire or lightning. Others channel positive energy to heal wounds.</p>
-<p>Illusion spells deceive the senses or minds of others. They cause people to see things that aren't there, to miss things that are there, to hear phantom noises, or to remember things that never happened. Some illusions create phantom images that any creature can see, but the most insidious illusions plant an image directly in the mind of a creature.</p>
-<p><b><i>Necromancy</i></b> spells manipulate the energies of life and death. Such spells can grant an extra reserve of life force, drain the life energy from another creature, create undead, or even bring the dead back to life. Its effects may seem unnatural to most people, so check setting details for information on how necromancy is perceived throughout society.</p>
-<p><b><i>Transmutation</i></b> spells change the properties of a creature, object, or environment. They might turn an enemy into a harmless creature. bolster the strength of an ally, make an object move at the caster's command, or enhance a creature's innate healing abilities to rapidly recover from injury.</p>
+<p><b><i>Evocation</i></b> spells create and manipulate energy to produce a desired effect, most often the utter destruction of an enemy. Beams or balls of fire, frost, lightning and force are all the purview of evocation magic.</p>
+<p><b><i>Illusion</i></b> spells control the powers of light and shadow in order to create a semblance of existence and deceive the senses of others. They cause people to see things that aren't there or to hear phantom noises, or they obscure or warp reality. Some illusions create phantom images that any creature can see, but the most insidious spells manipulate the very sight of a creature so that it is completely ruptured from reality.</p>
+<p><b><i>Transmutation</i></b> spells alter the properties of a substance that already exists, ranging from simple or subtle changes to those that make the original barely recognizable. They might transform a creature into a different one, bolster or sap the abilities of a creature, apply forces on an object to make it move or twist, or enhance a creature's innate healing abilities to rapidly recover from injury.</p>
 
 
 <br/><h1 id="equipment">Equipment</h1>
