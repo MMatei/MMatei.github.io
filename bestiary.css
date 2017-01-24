@@ -1,3 +1,6 @@
+html {
+	background-image: url(bkg_base.jpg);
+}
 a {
   text-decoration: none;
 }
@@ -41,6 +44,11 @@ h4 {
   font-variant: small-caps;
   margin: 0px;
   margin-top: 2px;
+}
+h5 {
+  font-size: 120%;
+  margin: 0px;
+  margin-bottom: 2px;
 }
 p {
   color: #7A200D;
@@ -86,9 +94,6 @@ span {
   color: #000000;
   text-decoration: underline;
   font-weight: normal;
-}
-.holy {
-  color: #ff9900;
 }
 .soni {
   color:#00cc99;
