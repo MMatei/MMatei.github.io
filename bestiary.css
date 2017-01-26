@@ -54,6 +54,10 @@ p {
   color: #7A200D;
   margin: 0px;
 }
+img {
+  height: 1em;
+  width: auto;
+}
 
 span {
   font-weight: bold;
