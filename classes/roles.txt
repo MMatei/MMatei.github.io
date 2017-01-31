@@ -1,5 +1,6 @@
 Every character type (class + specialization) should have a very clear ROLE defined. Fuzziness in this regard will make for characters that players don't get a good feel for, or that feel useless (knowing a bit of everything is useless if the team already has a specialist for every role). A clear role will also make the design process smoother.
 Every character type also has a SOURCE of its power (or several). This is mostly for flavor, so that an Arcane Striker differs from a Martial Striker, providing for interesting play and varied parties. But it will also have some impact on how the role will be performed, with impact on durability, damage dealt and skills.
+Note: a similar logic can (and should) be applied to monsters as well, especially those that fight in groups. Solitary monsters need to be more well rounded, but even so, not to the point where they become blandly indistinct.
 
 ROLES:
 	Defender - attract the attention of the enemies and absorb damage
@@ -17,7 +18,7 @@ POWER SOURCE:
 Character Type:
 	BARBARIAN
 		> Berserker - Martial Striker
-		> Totem Warrior - Martial/Nature Striker
+		> Totem Warrior - Martial/Nature Defender
 	BARD
 		> College of Lore - Arcane Leader
 		> College of Valor - Arcane/Martial Leader
@@ -44,10 +45,10 @@ Character Type:
 		> Thief - Cunning Controller
 		> Arcane Trickster - Cunning/Arcane Controller
 	SORCERER
-		> Draconic - Arcane Striker
+		> Draconic - Arcane/Martial Controller
 		> Wild Magic - Arcane Striker
 	WARLOCK
 		> Fiend - Arcane/Divine Striker
 		> Unfathomable One - Arcane/Divine Controller
-		> Fey - Arcane/Divine Controller
+		> Fey - Arcane/Divine Leader
 	WIZARD - Arcane Controller
