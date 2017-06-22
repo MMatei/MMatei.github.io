@@ -75,7 +75,6 @@ Find: <input type="search" id="spellsSearch"/>
     <li class="spell divin cleri druid"><img src="icons/divin.png"/> <a href="spells/guidance.html">Guidance</a></li>
     <li class="spell trans druid sorce wizar"><img src="icons/trans.png"/> <a href="spells/gust.html">Gust</a></li>
     <li class="spell illus bards cleri sorce wizar"><img src="icons/illus.png"/> <a href="spells/light.html">Light</a></li>
-    <li class="spell proto druid sorce warlo wizar"><img src="icons/proto.png"/> <a href="spells/lightning_lure.html">Lightning Lure</a></li>
     <li class="spell conju druid sorce warlo wizar"><img src="icons/conju.png"/> <a href="spells/mage_hand.html">Mage Hand</a></li>
     <li class="spell trans bards druid cleric sorce wizar"><img src="icons/trans.png"/> <a href="spells/mending.html">Mending</a></li>
     <li class="spell encha bards sorce wizar"><img src="icons/encha.png"/> <a href="spells/message.html">Message</a></li>
@@ -91,6 +90,7 @@ Find: <input type="search" id="spellsSearch"/>
     <li class="spell proto sorce wizar"><img src="icons/proto.png"/> <a href="spells/shocking_grasp.html">Shocking Grasp</a></li>
     <li class="spell necro cleri"><img src="icons/necro.png"/> <a href="spells/spare_dying.html">Spare the Dying</a></li>
     <li class="spell trans cleri"><img src="icons/trans.png"/> <a href="spells/thaumaturgy.html">Thaumaturgy</a></li>
+    <li class="spell conju druid sorce warlo wizar"><img src="icons/conju.png"/> <a href="spells/thorn_whip.html">Thorn Whip</a></li>
     <li class="spell divin bards sorce warlo wizar"><img src="icons/divin.png"/> <a href="spells/true_strike.html">True Strike</a></li>
     <li class="spell encha bards"><img src="icons/encha.png"/> <a href="spells/vicious_mockery.html">Vicious Mockery</a></li>
     <li class="spell proto sorce warlo wizar"><img src="icons/proto.png"/> <a href="spells/witchfire_blade.html">Witchfire Blade</a></li>
@@ -153,13 +153,13 @@ Find: <input type="search" id="spellsSearch"/>
     <li class="spell necro sorce wizar"><img src="icons/necro.png"/> <a href="spells/ray_sick.html">Ray of Sickness</a></li>
     <li class="spell abjur cleri"><img src="icons/abjur.png"/> <a href="spells/sanctuary.html">Sanctuary</a></li>
     <li class="spell abjur sorce wizar"><img src="icons/abjur.png"/> <a href="spells/shield.html">Shield</a></li>
-    <li class="spell abjur cleri palad"><a href="spells/shield_faith.html">Shield of Faith</a></li>
-    <li class="spell illus bards sorce wizar"><a href="spells/silent_image.html">Silent Image</a></li>
-    <li class="spell encha bards sorce wizar"><a href="spells/sleep.html">Sleep</a></li>
-    <li class="spell divin ritua bards druid range"><a href="spells/speak_animal.html">Speak with Animals</a></li>
-    <li class="spell evoca bards druid sorce wizar"><a href="spells/thunderwave.html">Thunderwave</a></li>
-    <li class="spell conju ritua wizar"><a href="spells/unseen_servant.html">Unseen Servant</a></li>
-    <li class="spell evoca sorce warlo wizar"><a href="spells/witch_bolt.html">Witch Bolt</a></li>
+    <li class="spell abjur cleri palad"><img src="icons/abjur.png"/> <a href="spells/shield_faith.html">Shield of Faith</a></li>
+    <li class="spell illus bards sorce wizar"><img src="icons/illus.png"/> <a href="spells/silent_image.html">Silent Image</a></li>
+    <li class="spell encha bards sorce wizar"><img src="icons/encha.png"/> <a href="spells/sleep.html">Sleep</a></li>
+    <li class="spell divin ritua bards druid range"><img src="icons/divin.png"/> <a href="spells/speak_animal.html">Speak with Animals</a></li>
+    <li class="spell proto bards druid sorce wizar"><img src="icons/proto.png"/> <a href="spells/thunderwave.html">Thunderwave</a></li>
+    <li class="spell conju ritua wizar"><img src="icons/conju.png"/> <a href="spells/unseen_servant.html">Unseen Servant</a></li>
+    <li class="spell proto sorce warlo wizar"><img src="icons/proto.png"/> <a href="spells/witch_bolt.html">Witch Bolt</a></li>
     <li class="spell encha palad"><img src="icons/encha.png"/> <a href="spells/wrathful_smite.html">Wrathful Smite</a></li>
   </ul>
   <li id="lvl2" class="level">Level II</li>
@@ -550,6 +550,24 @@ Find: <input type="search" id="spellsSearch"/>
     btn = document.getElementById(QueryString.ri);
     if (btn != null) btn.checked = true;
   }
+  // Debug info - count spells of every school
+  var x = document.getElementsByClassName("abjur");
+  console.log("Abjuration spells: " + x.length);
+  var x = document.getElementsByClassName("necro");
+  console.log("Animancy spells: " + x.length);
+  var x = document.getElementsByClassName("conju");
+  console.log("Conjuration spells: " + x.length);
+  var x = document.getElementsByClassName("divin");
+  console.log("Divination spells: " + x.length);
+  var x = document.getElementsByClassName("encha");
+  console.log("Noumancy spells: " + x.length);
+  var x = document.getElementsByClassName("proto");
+  var y = document.getElementsByClassName("evoca");
+  console.log("Protomancy spells: " + (x.length+y.length));
+  var x = document.getElementsByClassName("illus");
+  console.log("Umbramancy spells: " + x.length);
+  var x = document.getElementsByClassName("trans");
+  console.log("Transmutation spells: " + x.length);
 </script>
 </body>
 </html>
