@@ -1,5 +1,6 @@
-Every character type (class + specialization) should have a very clear ROLE defined. Fuzziness in this regard will make for characters that players don't get a good feel for, or that feel useless (knowing a bit of everything is useless if the team already has a specialist for every role). A clear role will also make the design process smoother.
-Every character type also has a SOURCE of its power (or several). This is mostly for flavor, so that an Arcane Striker differs from a Martial Striker, providing for interesting play and varied parties. But it will also have some impact on how the role will be performed, with impact on durability, damage dealt and skills.
+In this game world, a character's class is equivalent to a profession, or career. It defines an entire lifestyle and way of thinking and doing things. Having a class is therefore like having a college degree in the real world. And just like in the real world, there is some overlap between jobs/classes, but there still are some very clear defining features that make each class feel distinct.
+Every class has a main ROLE, which defines its primary purpose in combat. Specializations may add secondary ROLES, but there still should be a very clear sense of purpose for the class. Fuzziness in this regard will make for characters that players don't get a good feel for, or that feel useless (knowing a bit of everything is useless if the team already has a specialist for every role). A clear role will also make the design process smoother.
+Every character type (class + specialization) also has one or more sources of power that define the flavor of that class, since the same role can be performed in varied different ways. Unlike with ROLES, a character can tap into several power sources with varying degrees of intensity, which will be reflected in the flavor of their special mechanics.
 Note: a similar logic can (and should) be applied to monsters as well, especially those that fight in groups. Solitary monsters need to be more well rounded, but even so, not to the point where they become blandly indistinct.
 
 ROLES:
@@ -15,40 +16,42 @@ POWER SOURCE:
 	Divine - magic is granted by a Deity which expects obedience to a set of values
 	Nature - magic is granted by deep respect for the planet and its ecosystems
 
-Character Type:
-	BARBARIAN
-		> Berserker - Martial Striker
-		> Totem Warrior - Martial/Nature Defender
-	BARD
-		> College of Lore - Arcane Leader
-		> College of Valor - Arcane/Martial Leader
-	CLERIC - Divine Leader
-	DRUID
-		> Circle of the Land - Nature Controller
-		> Circle of the Moon - Nature Defender
-	FIGHTER
-		> Arcane Knight - Martial/Arcane Striker
+Character Class:
+	BERSERKER (very offensive and aggressive, is a threat not easily ignored)
+		> Reaver - Martial Striker
+		> Totem Warrior - Martial/nature Striker/controller
+		> Flagellant - Martial Striker/defender
+	BARD (dedicated to supporting others, magic is dependent on song)
+		> College of Lore - Arcane Leader/controller
+		> College of Valor - Arcane/martial Leader/controller
+	CLERIC - Divine Leader/defender (focusing on healing and protection, is a capable warrior, advantage of divine favor)
+	DRUID (very versatile as defender or spellcaster, perhaps hardest to kill among spellcasters, can be considered a godless cleric)
+		> Circle of the Land - Nature Defender/controller
+		> Circle of the Moon - Nature Defender/striker
+	FIGHTER (balanced and measured, presents a strong defensive that protects others)
+		> Arcane Knight - Martial/arcane Defender/striker
 		> Champion - Martial Defender
-		> Battle Master - Martial Leader
-	MONK
-		> Way of the Open Hand - Cunning/Divine Defender
-		> Way of the Shadow - Cunning/Divine Striker
-		> Way of the Four Elements - Cunning/Nature Controller
-	PALADIN
-		> Oath of Devotion/Ancients - Martial/Divine Defender
-		> Oath of Vengeance/Power - Martial/Divine Striker
-	RANGER
-		> Hunter - Martial/Nature Striker
-		> Beast Master - Martial/Nature Defender
+		> Battle Master - Martial Defender/leader
+	MONK (fast and versatile, this character can adapt to any battlefield easily, and is very hard to kill or stop, but doesn't deal much damage)
+		> Way of the Open Hand - Martial/cunning/nature Defender/controller
+		> Way of the Shadow - Martial/cunning/nature Defender/striker
+		> Way of the Four Elements - Martial/cunning/nature Controller/defender
+	PALADIN (Protector and leader, more action-focused than a cleric)
+		> Oath of Devotion/Ancients - Martial/Divine Defender/leader
+		> Oath of Vengeance/Power - Martial/Divine Striker/leader
+	RANGER (a more versatile fighter, who specializes in killing monsters)
+		> Hunter - Martial/nature Striker/controller
+		> Beast Master - Martial/nature Defender/controller
 	ROGUE
 		> Assassin - Cunning Striker
-		> Thief - Cunning Controller
-		> Arcane Trickster - Cunning/Arcane Controller
-	SORCERER
-		> Draconic - Arcane/Martial Controller
+		> Thief - Cunning Controller/striker
+		> Arcane Trickster - Cunning/arcane Controller
+	SORCERER (narrowly focused on simple magic, but able to punch above weight for short period)
+		> Draconic - Arcane Striker/defender
 		> Wild Magic - Arcane Striker
-	WARLOCK
-		> Fiend - Arcane/Divine Striker
-		> Unfathomable One - Arcane/Divine Controller
-		> Fey - Arcane/Divine Leader
-	WIZARD - Arcane Controller
+		> Favored Soul - Arcane Striker/leader
+	WARLOCK (able to fight with spell&sword, highly versatile thanks to spell-steal)
+		> Fiend - Arcane/divine/martial Striker
+		> Unfathomable One - Arcane/divine/martial Striker/controller
+		> Fey - Arcane/divine/martial Striker/defender
+	WIZARD - Arcane Controller (eventually capable of doing anything but needs preparation; very frail and least capable of handling a solo encounter)
