@@ -63,7 +63,7 @@ span {
   font-weight: bold;
 }
 .acid {
-  color: #66ff33;
+  color: #e2f29d;
 }
 .crsh {
   color: #000000;
@@ -100,5 +100,6 @@ span {
   font-weight: normal;
 }
 .soni {
-  color:#00cc99;
+  color: #00cc99;
+  background-color: #ffffff;
 }
