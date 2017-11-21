@@ -21,7 +21,7 @@ Character Class:
 		> Reaver - Martial Striker
 		> Totem Warrior - Martial/nature Striker/controller
 		> Flagellant - Martial Striker/defender
-	BARD (dedicated to supporting others, magic is dependent on song)
+	BARD (dedicated to supporting others, limited magic, but it recovers on short rest)
 		> College of Lore - Arcane Leader/controller
 		> College of Valor - Arcane/martial Leader/controller
 	CLERIC - Divine Leader/defender (focusing on healing and protection, is a capable warrior, advantage of divine favor)
@@ -36,7 +36,7 @@ Character Class:
 		> Way of the Open Hand - Martial/cunning/nature Defender/controller
 		> Way of the Shadow - Martial/cunning/nature Defender/striker
 		> Way of the Four Elements - Martial/cunning/nature Controller/defender
-	PALADIN (Protector and leader, more action-focused than a cleric)
+	PALADIN (Protector and leader, more focused on frontline melee than a cleric)
 		> Oath of Devotion/Ancients - Martial/Divine Defender/leader
 		> Oath of Vengeance/Power - Martial/Divine Striker/leader
 	RANGER (a more versatile fighter, who specializes in killing monsters)
@@ -46,12 +46,12 @@ Character Class:
 		> Assassin - Cunning Striker
 		> Thief - Cunning Controller/striker
 		> Arcane Trickster - Cunning/arcane Controller
-	SORCERER (narrowly focused on simple magic, but able to punch above weight for short period)
+	SORCERER (has fewest spell choices, but very versatile in employing them, including ability to go nova at considerable expense)
 		> Draconic - Arcane Striker/defender
 		> Wild Magic - Arcane Striker
 		> Favored Soul - Arcane Striker/leader
-	WARLOCK (able to fight with spell&sword, highly versatile thanks to spell-steal)
+	WARLOCK (tanky wizard, able to fight in second or even front line with spell&sword, highly versatile thanks to spell-steal)
 		> Fiend - Arcane/divine/martial Striker
 		> Unfathomable One - Arcane/divine/martial Striker/controller
 		> Fey - Arcane/divine/martial Striker/defender
-	WIZARD - Arcane Controller (eventually capable of doing anything but needs preparation; very frail and least capable of handling a solo encounter)
+	WIZARD - Arcane Controller (ultimately capable of surmounting any obstacle, but needs to be prepared for it; very frail and least capable of handling a solo encounter)
