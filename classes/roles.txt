@@ -39,9 +39,10 @@ Character Class:
 	PALADIN (Protector and leader, more focused on frontline melee than a cleric)
 		> Oath of Devotion/Ancients - Martial/Divine Defender/leader
 		> Oath of Vengeance/Power - Martial/Divine Striker/leader
-	RANGER (a more versatile fighter, who specializes in killing monsters)
+	RANGER (fighter with a pet, focused on surviving alone against tough odds, and on bringing down tough enemies)
 		> Hunter - Martial/nature Striker/controller
 		> Beast Master - Martial/nature Defender/controller
+		> Mutagenist - Martial/nature/alchemy Striker/Controller
 	ROGUE
 		> Assassin - Cunning Striker
 		> Thief - Cunning Controller/striker
@@ -50,6 +51,7 @@ Character Class:
 		> Draconic - Arcane Striker/defender
 		> Wild Magic - Arcane Striker
 		> Favored Soul - Arcane Striker/leader
+		> Muscle person of mystery - Arcane Striker+
 	WARLOCK (tanky wizard, able to fight in second or even front line with spell&sword, highly versatile thanks to spell-steal)
 		> Fiend - Arcane/divine/martial Striker
 		> Unfathomable One - Arcane/divine/martial Striker/controller
