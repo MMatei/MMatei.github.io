@@ -19,7 +19,7 @@ POWER SOURCE:
 Character Class:
 	BERSERKER (very offensive and aggressive, is a threat not easily ignored)
 		> Reaver - Martial Striker
-		> Totem Warrior - Martial/nature Striker/controller
+		> Totem Warrior - Martial/nature Striker/versatile
 		> Flagellant - Martial Striker/defender
 	BARD (dedicated to supporting others, limited magic, but it recovers on short rest)
 		> College of Lore - Arcane Leader/controller
@@ -29,7 +29,7 @@ Character Class:
 		> Circle of the Land - Nature Defender/controller
 		> Circle of the Moon - Nature Defender/striker
 	FIGHTER (balanced and measured, presents a strong defensive that protects others)
-		> Arcane Knight - Martial/arcane Defender/striker
+		> Spellblade - Martial/arcane Defender/striker
 		> Champion - Martial Defender
 		> Battle Master - Martial Defender/leader
 	MONK (fast and versatile, this character can adapt to any battlefield easily, and is very hard to kill or stop, but doesn't deal much damage)
