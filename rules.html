@@ -28,15 +28,16 @@
     document.getElementById("s6").innerHTML = genScore().toString()
   }
 </script>
-<title>Rules</title>
+<title>AD&D Rules</title>
 </head>
 
 <body>
 <div align="center">
+  <h1>Adventurers, Dungeons, & Dragons</h1><br/>
   <h1>Rules</h1><br/>
   <h3>Table of Contents</h3>
-  <h4><a href="#characterCreation">Creating a Character</a></h4>
   <h4><a href="#core">Core Concepts</a></h4>
+  <h4><a href="#characterCreation">Creating a Character</a></h4>
   <h4><a href="#encounters">Encounters</a></h4>
   <h4><a href="#exploration">Exploration</a></h4>
   <h4><a href="#travel">Travel</a></h4>
@@ -44,56 +45,84 @@
   <h4><a href="#spellcasting">Spellcasting</a></h4>
   <h4><a href="#equipment">Equipment</a></h4>
 </div><br/>
+
+
+<br/><h1 id="core">Core Concepts</h1>
 <h4>Game Master (GM)</h4>
-<p>The Game Master (or GM, for short) is the arbiter of a game of D&amp;D, enforcing the rules for the players and adjuticating any situations that are not covered in the rules. The decision of a GM is always final, for it is the GM who guides the story and plays all the non-player characters in the game. In essence, a GM acts as the spirit of the universe the game takes place in, enforcing the natural laws and moving events forward.</p>
+<p>The Game Master (or GM, for short) is the storyteller and arbiter in a game of AD&amp;D. The GM narrates the world, plays the non-player characters (NPCs), and altogether provides the framework in which the game takes places. Consequently, he/she is also enforcing the rules of the game world and also adjuticating them where they are unclear/incomplete. In essence, a GM acts as the spirit of the universe the game takes place in, enforcing the natural laws and moving events forward.</p>
+<p>It is the GM's duty to be responsible, fair, and consistent in the use of his/her powers. It is strongly encouraged that GM rulings be conservative, that is to say as close as possible to the spirit of the rules contained herein. For example, the GM should prefer only slightly altering a rule for a new situation, rather than inventing a new rule or subsystem entirely. This is because a game's balance is a fragile and delicate thing, liable to be broken by apparently slight perturbations.</p>
 <h4>Measuring Distance</h4>
-<p>D&amp;D was designed with grid-based combat in mind. Therefore, in all circumstances related to combat (abilities, spells, effects, speed etc), distance will be measured in squares. As a contingency for freeform scenarios, the distance in meters will be displayed within brackets. For reference, a square was originally defined as 5 by 5 feet, which roughly translates to 1.5 by 1.5 meters (error is negligible for the small distances involved in the typical combat).</p>
-<h4>Rounding Down</h4>
+<p>AD&amp;D was designed with grid-based combat in mind. Therefore, whenever distance is of concern, it is measured in squares. As a contingency for freeform scenarios, the distance in meters will be displayed within brackets. For reference, a square was originally defined as 5 by 5 feet, which roughly translates to 1.5 by 1.5 meters (error is negligible for the small distances involved in the typical combat).</p>
+<h4>Division and Rounding</h4>
 <p>Whenever you divide a number in the game, always round down, unless otherwise specified.</p>
 <h4>Advantage and disadvantage</h4>
 <p>When someone has advantage on a roll, one rolls two dice and selects the best result. When someone has disadvantage on a roll, one rolls two dice and selects the worst result.</p>
 <p>You cannot stack advantages or disadvantages on a roll (you never roll more than two d20s). If a situation brings both an advantage and a disadvantage, they cancel each other out. If you have a trait that allows you to reroll, you can only reroll one of the dice, but you choose which one.</p>
 
-
-<br/><h1 id="characterCreation">Creating a Character</h1>
-<h4>Step 1: Choose a Class</h4>
-<p>Every adventurer comes from a certain background, and has undergone a certain type of training (whether formal or not), thus obtaining a basic set of skills that, throughout one's trials and tribulations, will be further honed in the same general direction. This set of skills is called a class, and the are 12 paths to choose from: <a href="classes/barbarian.html">Berserker</a>, <a href="classes/bard.html">Bard</a>, <a href="classes/cleric.html">Cleric</a>, <a href="classes/druid.html">Druid</a>, <a href="classes/fighter.html">Fighter</a>, <a href="classes/monk.html">Monk</a>, <a href="classes/paladin.html">Paladin</a>, <a href="classes/ranger.html">Ranger</a>, <a href="classes/rogue.html">Rogue</a>, <a href="classes/sorcerer.html">Sorcerer</a>, <a href="classes/warlock.html">Warlock</a>, or <a href="classes/wizard.html">Wizard</a>. You cannot change or alter your class during the game, but there are different paths to choose from in each class, and there is enough flexibility to allow several interesting variations for the same class.</p>
-<h4>Step 2: Choose a Race</h4>
-<p>Choose one of the following races (including sub-race if multiple choices available): <a href="races/dragonborn.html">Dragonborn</a>, <a href="races/dwarf.html">Dwarf</a>, <a href="races/elf.html">Elf</a>, <a href="races/gnome.html">Gnome</a>, <a href="races/half_elf.html">Half-Elf</a>, <a href="races/halfling.html">Halfling</a>, <a href="races/half_orc.html">Half-Orc</a>, <a href="races/human.html">Human</a>, <a href="races/highman.html">Highman</a>, <a href="races/kenku.html">Kenku</a>, <a href="races/lizardfolk.html">Lizardfolk</a>, <a href="races/tiefling.html">Tiefling</a>, or <a href="races/tigran.html">Tigran</a>. Every race (and sub-race) has its peculiarities and inclinations, which you may wish to consider for roleplaying purposes. More practically, the chosen race determines your character's general appearance, base speed, the languages he/she can speak, as well as a number of racial traits, which provide miscellaneous benefits. Some races may provide adjustments to your ability scores; keep these in mind for step 3.</p>
-<h4>Step 3: Determine Ability Scores</h4>
-<p>The ability scores for your character are determined using a point buy system. You start with 8 points which you can spend however you like to buy your character's six ability scores, according to the following table. Remember to add your chosen race's ability modifiers.</p>
-<table>
-  <tr><td>Score</td><td>-2</td><td>-1</td><td>+0</td><td>+1</td><td>+2</td><td>+3</td></tr>
-  <tr><td>Cost</td><td>-3</td><td>-1</td><td>+0</td><td>+1</td><td>+3</td><td>+6</td></tr>
-</table>
-<h4>Step 4: Your character's background and personality</h4>
-<p>You have now chosen everything needed for the mechanics of the game, but you should also spend some time fleshing out a background and personality for your character, so that they are more than just a pile of stats. D&amp;D might be primarily about adventuring and overcoming various challenges, but it is also a roleplaying game that enables you to act out fantasy characters in a fantasy world. You needn't write too much, even a few lines might suffice to give context to your character's decision and make the game more immersive for everyone. The only requirement for your background information is that it doesn't contradict game lore or mechanics (for example, you can't have a lazy forgetful wizard, since their power comes from intensive study &mdash; exceptions are subject to GM approval).</p>
-<p>If in doubt or lacking inpiration, consult the GM. It is not required to have everything about a character set in stone at the start; you can also add details as the adventure unfolds, though within the limits of common sense (so for example, it is not acceptable to say an NPC is suddenly a relative of your character).</p>
-<p>Remember that the most important thing is for you and everyone at the table to have fun. Choose a personality and story that would be interesting and synergizes well with your party members. Never choose something that is deliberately antagonistic to another character unless <b>everyone</b> at the table agrees to this. Also, remember that the character's ability scores define raw physical and mental ability, and have nothing to do with intelligence or personality unless you specifically choose to interpret it this way.</p>
-<p>Congratulations! You are now done and ready to play!</p>
-<h4>Alternative: Hardcore Rules</h4>
-<p>For players who want a little more randomness in their game, or simply wish it to be more challenging, they can opt for the following alternative rules. These hardcore rules risk unbalacing the game and the party (a character may be stronger than the rest, and some characters may be significantly weaker/stronger than average). In the interest of fairness, it is recommended that the entire party be either normal or hardcore, and exceptions should only be made with the approval of all the players and the GM.</p>
-<p><b><i>Determining Ability Scores.</i></b> Instead of point-buy, roll 6 d6. Place each resulting number to the ability score of your choice, then subtract 3.</p>
-<p><b><i>HP gain on level up.</i></b> Instead of a fixed gain, you must roll your hit die to determine your hp increase.</p>
-
-
-<br/><h1 id="core">Core Concepts</h1>
-<p>Your character's raw physical and mental capacities are defined by six ability scores: Strength, Dexterity, Constitution, Intelligence, Wisdom and Charisma. These are numbers ranging from a minimum of -5 (meaning complete and utter lack of said ability), to 0 (the ability of the average untrained human), to +5 (the peak of ability for most mortal heroes). Some rare, very powerful beings (including player characters over level 20) can go beyond +5.</p>
-<p><b>Strength</b> measures the raw force in your body and the ability to put it to good use. Strength is required when pushing or pulling heavy objects, shoving enemies, breaking down stuff, etc. For attacks with melee and Thrown weapons, you add Strength to hit roll and damage, provided you are proficient with the weapon you use.</p>
+<h3>Attributes</h3>
+<p>Your character's raw physical and mental capacities are defined by six attributes: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. These are numbers ranging from a minimum of -5 (meaning complete and utter lack of said ability), to 0 (the ability of the average untrained human), to +5 (the peak of ability for most mortal heroes). Some rare, very powerful beings (including player characters over level 20) can go beyond +5.</p>
+<p>One thing all attributes have in common is that you add them to any roll (weapon attack, ability, spell, skill, etc) that uses that attribute. For example, you add Strength to a hit roll when attempting to strike with a greatsword, but also when you try to grapple.</p>
+<p><b>Strength</b> measures the raw force in your body and the ability to put it to good use. Strength is required when pushing or pulling heavy objects, shoving enemies, breaking down stuff, etc. But perhaps more importantly, Strength is vital for effectively wielding most weapons, and for inflicting damage. Whether it is for an axe chop, pulling a bow string, or handling the fickle and powerful currents of magic, Strength increases dealt damage (by the value of the score, unless otherwise specified).</p>
 <p id="encumbrance"> You can comfortably carry a maximum of 25 + 5 * Strength kg. If needed, you can carry up to 50% more, but you suffer one level of <a href="conditions/exhaustion.html">exhaustion</a> every hour. Tiny creatures can carry only half this amount. For every size over Medium, the carrying capacity is doubled.</p>
-<p><b>Dexterity</b> measures the ability to be agile, nimble, or move quietly. It also covers talent in actions that require precision, such as disarming traps, picking locks, or manufacturing and manipulating delicate objects. Dexterity also contributes to one's Deflection defense depending on the armor worn (see below). For ranged attacks except Thrown weapons, you add Dexterity to hit roll and damage, provided that you are proficient with the weapon you use. You can also choose to use Dexterity instead of Strength for Finesse weapons.</p>
-<p><b>Constitution</b> measures one's vitality and ability to withstand exertion, as well as toxins, poisons, alcohool, and diseases. There are trying situations aplenty that may call for a simple Constitution check, such as trying to outdrink someone, trying to hold the contents of your stomach in the presence of a pungent smell, or trying to endure punishment without making a sound.</p>
-<p>For every level you have, you add your Constitution to your maximum hit points (hp). If you temporarily gain or lose Constitution, then you also have to adjust your max hp accordingly. Any addition to max hp is also made to current hp. Lowering the max hp will not modify current hp so long as it is not greater than max hp.</p>
-<p><b>Intelligence</b> represents the character's capacity to store knowledge, as well as the skill to put that knowledge to good use. A character with good intelligence won't just recite a book on elven history - he will point out the specific passage that is relevant to the problem at hand. However, the actual task of reasoning on the available information is left to the player. Intelligence is useful when appraising an item, disputing a game of skill, forging documents, or preparing a suitable disguise. For Wizards, Spellblades and Arcane Tricksters, it determines their ability to memorise the intricate arcane magic, thus determining their spellpower.</p>
+<p><b>Dexterity</b> measures the ability to be agile, nimble, or move quietly. It also covers talent in actions that require precision, such as disarming traps, picking locks, or manufacturing and manipulating delicate objects. Dexterity also adds to your initiative rolls and contributes to one's Deflection defense depending on the armor worn. For weapons and abilities with the Dexterity tag, you add this score to hit roll, provided that you are proficient with the weapon you use.</p>
+<p><b>Constitution</b> measures one's vitality and ability to withstand exertion, as well as toxins, poisons, alcohool, and diseases. There are trying situations aplenty that may call for a simple Constitution check, such as trying to outdrink someone, trying to hold the contents of your stomach in the presence of a pungent smell, or trying to endure punishment without making a sound. Your Constitution score is added to your maximum Health.</p>
+<p>For every level you have, you add your Constitution to your maximum Stamina. If you temporarily gain or lose Constitution, then you also have to adjust your maximum Stamina accordingly. Any addition to maximum Stamina is also made to current Stamina, but lowering the maximum Stamina will not modify current Stamina so long as it is not greater than the new maximum Stamina.</p>
+<p><b>Intelligence</b> represents the character's capacity to store knowledge, as well as the skill to put that knowledge to good use. A character with good intelligence won't just recite a book on elven history - he will point out the specific passage that is relevant to the problem at hand. However, the actual task of reasoning on the available information is left to the player. Intelligence is useful when appraising an item, disputing a game of skill, forging documents, or preparing a suitable disguise.  More importantly, intelligence determines how many proficiencies a character can have. For Wizards, Spellblades and Arcane Tricksters, it determines their ability to memorise the intricate arcane magic, thus determining their spellpower.</p>
 <p><b>Wisdom</b> represents a combination of life experience, perception and attunement to the environment. It is a measure of your attention to what is going on and can be actively employed to discern or interpret the unusual. For Clerics, Druids, Rangers, and Monks, it also represents the strength of their connection to their source of power and thus determines their spellpower.</p>
-<p><b>Charisma</b> measures one's strength of will and character, and confidence in oneself. It is very important in social interactions, when one wants to be noticed or to get a point across. For Bards, Paladins, Sorcerers and Warlocks, it represents their resolve and control over their inner magic and thus determines their spellpower.</p>
-<h3>The Core Mechanic</h3>
-<p>When a player declares an action – which includes a desired outcome and an approach anticipated to bring about that action – the GM determines the outcome and describes the result. First, the GM determines whether there is a chance that the action might succeed and a chance that the action might fail. If the GM determines the action can’t succeed, the action is a failure, though the GM may warn the player of the impossibility of the action instead. If the GM determines the action can’t fail, the action is a success. If the GM determines that the action can fail, but there is no risk or cost for failure such that the player can keep trying until they succeed, the action is a success. Otherwise, the GM uses the Core Mechanic to determine the outcome.</p>
-<p>Under the Core Mechanic, based on the approach the player is using, the GM determines which Ability (Strength, Dexterity, Constitution, Intelligence, Wisdom, or Charisma) governs the action. The GM also determines an appropriate Difficulty Class (DC) for the action. The GM – possibly with help from the player – determines whether the character has a Skill relevant to the task. The GM also determines any circumstantial Modifiers. Modifiers can include a static bonus or penalty or the roll can be made with Advantage or Disadvantage.</p>
-<p>Once all of that has been determined, the player rolls 1d20 and adds the relevant Ability Modifier, Bonuses and Penalties, and their Skill Bonus (if applicable). If the total equals or exceeds the chosen Difficulty Class, the action succeeds. If not, the action fails.</p>
-<p>If an action succeeds, the player either accomplishes their desired outcome or makes progress toward that outcome. If the action fails, the player does not accomplish their desired outcome and may suffer costs or risks associated with the roll. Regardless of the success or failure of the action, the GM may also apply consequences based on the player’s approach. The GM describes the results and applies any necessary consequences. Then play continues.</p>
-<p>A roll of 1 means automatic failure, modifiers notwithstanding; the character has fumbled and made a particularly poor attempt. A roll of 20, on the other hand, means a critical success - the character succeeds even if his roll doesn't exceed the DC. If the roll is to be succeeded by rolling damage or healing dice, then you add the maximum result of the roll to your roll (so 1d6 becomes 6 + 1d6). If the roll was made to apply, or continue to apply, an effect, then the duration of the effect is extended by one turn.</p>
-<p>Ability checks are written down as "DC x Ability (Skill)", where x is the number to be matched or exceeded for the check to succeed. There may not be a skill involved in an ability check, or there might be a choice between two abilities or skills.</p>
+<p><b>Charisma</b> measures one's strength of will and character, and confidence in oneself. It is very important in social interactions, when one wants to be noticed or to get a point across. NPCs will have a better starting impression of charismatic characters. For Bards, Paladins, Sorcerers and Warlocks, it represents their resolve and control over their inner magic and thus determines their spellpower.</p>
+<h3>Hit Points & Health</h3>
+<p>Hit Points (hp) represent a character's energy in defending him/herself from serious harm. All damage suffered by the character is subtracted from the hp, while they are above 0. This represents the character deflecting, parrying, or taking only a minor bruise or cut. If damage would reduce hp below 0, it is set to 0 and the character takes 1 Health damage and an injury. Unless otherwise specified, and injury's effects last until it receives adequate attention (either a Medicine Roll followed by uninterrupted long rest or strong enough magic). While hp remains 0, the character is <a href="conditions/bloodied.html">bloodied</a>, and should take cover and seek to recover hp, as he/she is now very vulnerable to further damage.</p>
+<p>Health is a measure of a character's physical integrity, and if it drops to 0, then that character dies, unless it is a Hero, or a Player Character, in which case it falls <a href="conditions/unconscious.html">unconscious</a> and is maimed instead. Maiming means rolling on the maim table, which can still result in death, or a debilitating effect that can only be healed by very powerful magic. Every time your character takes Health damage, you must roll on the injury table to determine what happens. Health is determined by a character's class, and is boosted by Constitution. Unlike other stats, Health doesn't increase as a character levels up, with very few opportunities to increase it.</p>
+<table>
+  <tr><th>d20</th><th>Injury</th><th>Effect</th></tr>
+  <tr><td>1-4</td><td>Clean cut</td><td>&mdash;</td></tr>
+  <tr><td>5-8</td><td>Bleeding</td><td>At the start of each of your turns, lose 1 Health</td></tr>
+  <tr><td>9-10</td><td>Stunned</td><td>Stunned for 10 rounds</td></tr>
+  <tr><td>11-12</td><td>Broken leg bone</td><td>Speed is halved</td></tr>
+  <tr><td>13-14</td><td>Broken ribs</td><td>Increase exhaustion by one level</td></tr>
+  <tr><td>15-17</td><td>Broken arm</td><td>Drop your weapon</td></tr>
+  <tr><td>18-20</td><td>Dazed</td><td>Deaf for 10 rounds, front arc is limited to squares directly in front</td></tr>
+</table>
+<table>
+  <tr><th>d6</th><th>Maiming effect</th></tr>
+  <tr><td>1</td><td>Death</td></tr>
+  <tr><td>2</td><td>Lose left arm</td></tr>
+  <tr><td>3</td><td>Lose right arm</td></tr>
+  <tr><td>4</td><td>Lose left leg</td></tr>
+  <tr><td>5</td><td>Lose right leg</td></tr>
+  <tr><td>6</td><td>Lose an eye</td></tr>
+</table>
+
+<h3>Action Resolution - The Core Mechanic</h3>
+<p>All uncertain situations in the game revolve around this core mechanic (with some modifications). Whenever something isn't explicitly presented in the rules, the GM should default to the core mechanic.</p>
+<ol>
+  <li>A character declares an action and the desired outcome of that action (unless the outcome is obvious).</li>
+  <li>GM decides: is the outcome achievable by that course of action? Is the character capable of performing that action?</li>
+  <ul>
+    <li>YES &#10132; Go to step 3.</li>
+    <li>NO &nbsp;&#10132; Go back to step 1.</li>
+  </ul>
+  <li>GM decides: does the action have any chance of failing?</li>
+  <ul>
+    <li>YES &#10132; Go to step 4.</li>
+    <li>NO &nbsp;&#10132; The action succeeds exactly as intended. Go to step 6</li>
+  </ul>
+  <li>GM determines what attribute governs the action and what proficiency might be involved (if several possibilities, ask player for details on exactly what the character intends to do). The GM also determines an appropriate modifier for the roll - negative numbers make the action more difficult. Provide the player with all this information, then ask if he/she wants to proceed or reconsider.</li>
+  <ul>
+    <li>YES &#10132; Go to step 5.</li>
+    <li>NO &nbsp;&#10132; Go back to step 1.</li>
+  </ul>
+  <li>Does the action succeed? Roll a d20, add the character's relevant bonuses (governing attribute, relevant proficiency, status effects, etc), then subtract the modifier. The answer is:</li>
+  <ul>
+    <li><xx style="padding-right:1.5ch">20+</xx>&#10132; YES, AND... (<i>critical success</i> &mdash; the action succeeds spectacularly, with an additional boon [if at all possible]; eg. the action takes less to complete than expected)</li>
+    <li><xx style="padding-right:1.5ch">15&minus;19</xx>&#10132; YES (<i>success</i> &mdash; the action succeeds exactly as intended)</li>
+    <li><xx style="padding-right:0.5ch">10&minus;14</xx>&#10132; YES, BUT... (<i>partial success</i> &mdash; player chooses: action succeeds only partially [if this is possible], action succeeds, but there is a complication [explained beforehand by the GM], action fails with minimal possible consequences [time is still wasted, for example])</li>
+    <li><xx style="padding-right:1.5ch">2&minus;9</xx>&#10132; NO (<i>failure</i> &mdash; the action fails, causing all the consequences of failure to happen)</li>
+    <li><xx style="padding-right:2.5ch">&lt;1</xx>&#10132; NO, AND... (<i>critical failure</i> &mdash; the character fumbles and not only suffers the consequences of failure, but also an additional complication, determined by the GM)</li>
+  </ul>
+  <li>The GM narrates the outcome of the action.</li>
+</ol>
+<p>Whenever an action resolution is required by a game mechanic, the text will ask for a 'Roll &lt;attribute&gt; (&lt;skill&gt;) vs &lt;modifier&gt;'. This provides all the information the GM needs for action resolution (although sometimes there might be a choice of skills).</p>
 <h4>Reacting to Danger</h4>
 <p>Whenever a character is in immediate danger, but has a split second to react, the GM can invoke this rule. The GM describes what the character is aware of. The player then describes their reaction. The GM then determines if the reaction could avoid or mitigate the unexpected event, whether it can succeed, and whether it can fail. The GM can then ask for an Ability Check based on the action, or may impose advantage/disadvantage on the effect. Any spell that can be cast as a Reaction can be used in this instance.</p>
 <h4>Working Together</h4>
@@ -111,7 +140,7 @@
 <p><b><i>Stealth.</i></b> Used when you want to hide from somebody.</p>
 <p><b><i>Athletics.</i></b> Covers climbing, jumping, swimming and other strenuous physical activity that is more a question of sustaining effort, rather than pure application of brute strength.</p>
 <p><b><i>Arcana.</i></b> Deals with knowledge about anything magical in nature: spells, rituals, other planes of existence and their inhabitants.</p>
-<p><b><i>Crafting.</i></b> Your knowledge and skill in manually crafting a certain category of objects. When you choose to become proficient in this skill, you must also choose a particular type of crafting to specialize in; for example: smithing, woodworking, weaving, masonry, alchemy, arcana, jewelry, brewing etc. You can have multiple Crafting proficiencies for separate categories.</p>
+<p><b><i>Crafting.</i></b> Your knowledge about and skill in the crafting of a certain category of objects. When you choose to become proficient in this skill, you must also choose one of the following categories: smithing, woodworking, weaving, masonry, alchemy, arcana, jewelry, brewing etc. Each category is treated as a separate skill.</p>
 <p><b><i>Forgery.</i></b> Your skill in imitating the writing or drawing style of others, so as to be able to produce documents (or other objects) that can be attributed to someone else.</p>
 <p><b><i>History.</i></b> Your knowledge about the history of the world (anything that can be found in a historic text or in bardic poems). It has some overlap with Arcana and Religion, but only in regards to historical facts.</p>
 <p><b><i>Linguistics.</i></b> Your ability to pick up new (or slightly different) languages. With enough study or checks for the same language, you might even become fluent in it.</p>
@@ -131,23 +160,40 @@
 <h4>Proficiency Bonus</h4>
 <p>The Proficiency Bonus is a number determined by a character's highest level class (see class progression table). This bonus is added to every skill or attribute defense the character is proficient in (proficiencies are explicitly determined by a character's class and choices during character creation).</p>
 <h4 id="defenses">Defenses</h4>
-<p>Every attack (whether physical or magical) is opposed by one of seven defenses: Deflection, Firmness, Reflex, Endurance, Warding, Intuition, or Will. The last six are directly dependent on the six attribute scores, and their value equals 14 + attribute + Proficiency Bonus (if character is proficient in that defense type).</p>
-<p>Deflection defends against direct physical attacks and is determined by a character's armor (or armor-like spell) and dexterity. The base (unarmored) value is 10 + Dexterity, but wearing armor changes this value. Some armors may restrict the size of the Dexterity bonus that can be added to Deflection (but negative values will still be subtracted). Heavy armor (and other effects that do not mention Dexterity) ignore Dexterity altogether.</p>
+<p>Every attack (whether physical or magical) is opposed by one of seven defenses: Deflection, Firmness, Reflex, Endurance, Warding, Intuition, or Will. The last six are solely determined by each of the six attribute scores, and their value equals attribute + Proficiency Bonus (if character is proficient in that defense type).</p>
+<p>Deflection defends against direct physical attacks and is determined by a character's armor (or armor-like spell) and dexterity. The base (unarmored) value is equal to Dexterity, but wearing armor changes this value. Some armors may restrict the size of the Dexterity bonus that can be added to Deflection (but negative values will still be subtracted). Heavy armor (and other effects that do not mention Dexterity) ignore Dexterity altogether.</p>
 <p>Firmness opposes attempts to overpower the character. Reflex opposes threats which only quick action can mitigate, such as explosions and sudden perils. Endurance opposes toxins, disease or other strains on the body. Warding opposes hostile magic that doesn't target the senses or the mind. Warding is influenced by Intelligence since it helps to know counter-charms or small tricks to avoid magical effects. Intuition opposes magical illusions and other attacks on one's senses. Will opposes attacks that seek to intimidate, terrorise, or twist the mind and subvert one's thoughts.</p>
 <h4>Passive Proficiencies</h4>
-<p>All skills are assumed to represent both active uses of those things and relevant background knowledge, lore, information, and awareness, as well as passive defenses to situations that might test that skill. A character’s Passive Proficiency for a skill equals 10 + Ability Modifier (of the ability most often associated with that skill) + Proficiency Bonus (if the character is proficient in that skill). If the character has Advantage on a skill, the corresponding Passive Proficiency gains an additional +5. If the character has Disadvantage, the character gets a -5 penalty. Any bonus that can be granted to a skill roll, such as from Bardic Inspiration or from a Cleric’s bless spell will also be applied to Passive Proficiencies.</p>
-<p><i>Example 1: Alice encounters a strange mural depicting an unknown figure. If she has proficiency in Religion and Passive Religion is greater or equal to the DC, then the GM informs her that she recognizes the mural as a depiction of the long-forgotten Goddess Asura. Alice can, of course, make an active Religion roll to actively investigate the mural. Sometimes, this may yield additional information that a cursory glance would not.</i></p>
-<p><i>Example 2: A thief tries to sneak past Alice. To succeed, the thief must roll Stealth equal or higher to Alice's Passive Perception.</i></p>
+<p>All skills are assumed to represent both active uses of those things and relevant background knowledge, lore, information, and awareness, as well as passive defenses to situations that might test that skill. A character’s Passive Proficiency for a skill equals attribute (the one most often associated with that skill) + Proficiency Bonus (if the character is proficient in that skill). If the character has Advantage on a skill, the corresponding Passive Proficiency gains an additional +5. If the character has Disadvantage, the character gets a -5 penalty. Any bonus that can be granted to a skill roll, such as from Bardic Inspiration or from a Cleric’s bless spell will also be applied to Passive Proficiencies.</p>
+<p><i>Example 1: Alice encounters a strange mural depicting an unknown figure. If she has proficiency in Religion and Passive Religion is greater or equal to a threshold set in the adventure description, then the GM informs her that she recognizes the mural as a depiction of the long-forgotten Goddess Asura. Alice can, of course, make an active Religion roll to actively investigate the mural. Sometimes, this may yield additional information that a cursory glance would not.</i></p>
+<p><i>Example 2: A thief tries to sneak past Alice. To succeed, the thief must Roll Dexterity (Stealth) vs Alice's Passive Perception.</i></p>
 <h4>Tasks that require tools</h4>
 <p>There are some tasks that can only be performed if one has the adequate tools. For example, picking a lock requires thieves' tools. The GM may allow improvised tools to work (provided that said tools can be improvised with the resources at hand), but the check will be performed with disadvantage. Note that adequate tools can actually be crafted by a professional - for example, a skilled smith can probably craft a set of thieves' tools (even with an improvised forge), which will then behave as a set bought from a merchant. Improvisation refers specifically to employing objects that were not meant for the task at hand.</p>
+<h4>Language proficiencies</h4>
+<p><b><i>Common.</i></b> As the name implies, this is the most widely spoken language in the world. Some sages say that this is the ancestral tongue of humans, but it is far more likely to be an amalgamation of many different tongues of races common and exotic, slowly evolving for the milennia since the birth of the written word. Whatever its origin, it has been kept alive by every empire worth its name and by long-distance traders. In times of collapse, regions might develop dialects of Common, but rarely does this isolation last so long as to render their speech unintelligible. Thus, nearly every sentient speaks some dialect of Common.</p>
+<p><b><i>Elvish.</i></b> Just like the race that speaks it, elvish is a sophisticated language (some might say too complicated), with many different words for even the slightest variation in meaning. The words themselves are long, and thus the language is time-consuming and difficult to master, especially as elves are very precious about pronounciation. Their language is rich in vowels (and thus quite melodic), but lacking in consonants, which can create some difficulty to outsiders since so many words seem to sound very similar. Elvish script is similarly complex and beautiful. It is a cursive alphabet where letters are written slightly different depending on the letters next to them, so that the end result looks like a piece of art, not just simple writing. In fact, elves consider it a major offence to write in a rush and thus botch the job. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.</p>
+<p><b><i>Dwarvish.</i></b> Dwarvish is generally a complicated language, one that has changed quite little over the ages. However, what changes do appear in the spoken form have never been adapted to the written, and so reading and writing Dwarvish is the most difficult part of mastering the language. Dwarvish words are generally short, especially those relating to military or mining terms. There is a large vocabulary to master, but one rarely misunderstands what a dwarf says.</p>
+<p>Dwarven script is frugal and angular, designed to be easy to carve into stone. There are many more consonants than in any other language, and they are liberally employed, making dwarf speech sound grating to foreigner ears.</p>
+<p><b><i>Giant.</i></b> A peculiar language that few outsiders get the opportunity to learn, the tongue of giants relies much on volume to convey meaning. The script is inspired by Dwarfish, as giants are also fond of monumental inscriptions. The giant script, however, also has markers for the volume used in speaking, so that meaning is not lost in writing.</p>
+<p><b><i>Draconic.</i></b> Draconic is thought to be one of the oldest extant languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants, clicks, and sibilants, that are very difficult for most other creatures to pronounce properly.</p>
+<p><b><i>Gnomish.</i></b> Gnomish is a soft dialect of Dwarvish, constructed out of the inability of Gnomes to pronounce harsh consonants (eg. the Dwarvish for city - khaz - is pronounced cas). Their writing style is also a bastardized version of Dwarvish, with harsh angles softened into curves. This is indeed much hard to carve into stone, but Gnomes prefer to paint, anyway.</p>
+<p><b><i>Goblin.</i></b></p>
+<p><b><i>Orcish.</i></b></p>
+<p><b><i>Abyssal.</i></b> The tongue of demons, it is as chaotic and ever-changing as they are, such that there is no mortal that can truly master it.</p>
+<p><b><i>Infernal.</i></b> The tongue of devils; it is said one must sacrifice a sliver of one's soul in order to master it.</p>
+<p><b><i>Celestial.</i></b> The tongue of angels and other servants of the gods of good.</p>
+<p><b><i>Auran.</i></b> Auran is a language of whistles that has no official written form. It is spoken by Aarakocra, Kenku, and other related species.</p>
+<p><b><i>Deep Speech.</i></b> The tongue of the horrific mind flayers and their servants. It has no written form since mind flayers regard writing as a tool of savages. At any rate, deep speech isn't made to be spoken out loud, but rather to exchange in thought form. Therefore, it is extremely difficult to comprehend by other races.</p>
+<p><b><i>Primordial.</i></b> This is the language of the sentient Elementals.</p>
+<p><b><i>Sylvan.</i></b> Spoken by sentient woodland creatures, Sylvan has no written form since these creatures see no point in writing. Sylvan is a language that only the very patient can speak properly, as it relies on very long sounds that are dragged as if spoken in slow motion.</p>
 <h4 id="feats">Feats</h4>
-<p>Feats are very particular abilities that do not readily fit the training of any one class. These may be inborn abilities, or specialist skills picked up during one's adventures. When a character gains an Ability Score Improvement, he/she can forego it in exchange for a feat from the following list.</p>
-<p><b><i>Alert.</i></b> Always ready to spring into action, you gain a +5 bonus to initiative.</p>
-<p><b><i>Athlete.</i></b> When you are prone, standing up uses only 1 square of your movement. Climbing doesn't halve your speed. The bonus to your jump distance from Strength is doubled.</p>
+<p>Feats are very particular abilities that do not readily fit the training of any one class. These may be inborn abilities, or specialist skills picked up during one's adventures. When a character gains an Attribute Improvement, he/she can forego it in exchange for a feat from the following list.</p>
 <p><b><i>Actor.</i></b>You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person. You can mimic the speech of another person or the sounds made by other creatures and incorporate this into your deception attempts, but must make an additional Deception roll vs Passive Insight. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute.</p>
-<p><b><i>Charger.</i></b> When you use your action to Dash, you can use a quick action to make one melee weapon attack or to shove a creature. If you move at least 2 squares in a straight tine immediately before taking this quick action, you either gain a +5 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or you gain +2 on the shove roll and can push the target up to 2 squares away from you on success.</p>
+<p><b><i>Alert.</i></b> Always ready to spring into action, you gain a +5 bonus to initiative.</p>
+<p><b><i>Armor Expert.</i></b> Increase the maximum Dexterity bonus allowed by an armor you are proficient in by 1.</p>
+<p><b><i>Athlete.</i></b> When you are prone, standing up uses only 1 square of your movement. Climbing doesn't halve your speed. The bonus to your jump distance from Strength is doubled.</p>
+<p><b><i>Charger.</i></b> When you use your action to Dash, you can use a quick action to make one melee weapon attack or to shove a creature. If you move at least 2 squares in a straight line immediately before taking this quick action, you either gain a +6 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or you gain +3 on the shove roll and can push the target up to 2 squares away from you on success.</p>
 <p><b><i>Combat Heal.</i></b> When you take the Dodge action, you can also spend one Hit Die to heal: roll the die, add your Constitution modifier and regain that many hit points.</p>
-<p><b><i>Elemental Adept.</i></b> Choose one of the following damage types: acid, cold, fire, or electric. When you roll damage for a spell that deals damage of that type, you can treat any 1 as a 2. You can select this feat multiple times for different damage types.</p>
 <p><b><i>Fast Healer.</i></b> When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution.</p>
 <p><b><i>Healer.</i></b> When you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point. As an action. you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest.</p>
 <p><b><i>Heavy Armor Master.</i></b> While wearing heavy armor, you take 3 less damage when hit with crushing, slashing or piercing damage. You will always suffer a minimum of 1 damage, however.</p>
@@ -156,23 +202,48 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <p><b><i>Mage Slayer.</i></b> You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits: When a creature within 1 square of you casts a spell, you can use your reaction to make a melee weapon attack against that creature. When you damage a creature that is concentrating on a spell, that creature has disadvantage on the roll it makes to maintain its concentration. Attack rolls from spells cast within 1 square of you are made with disadvantage.</p>
 <p><b><i>Mobile.</i></b> Your speed increases by 1 square. When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn. When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.</p>
 <p><b><i>Keen Eyes.</i></b> If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips. Gain +5 to Passive Perception.</p>
-<p><b><i>Polearm Master.</i></b> When you take the Attack action and attack with only a polearm or a quarterstaff, you can use a quick action to make a melee attack with the opposite end of the weapon, dealing 1d4 crushing damage on a hit. While you are wielding a polearm or a quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach.</p>
+<p><b><i>Polearm Master.</i></b> When you take the Attack action and attack with only a polearm or a quarterstaff, you can use a quick action to make a melee attack with the opposite end of the weapon, dealing 2 crushing damage on a hit. While you are wielding a polearm or a quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach.</p>
 <p><b><i>Resilient.</i></b> Gain proficiency in Firmness, Reflex, Endurance, Warding, Intuition, or Will.</p>
-<p><b><i>Savage Attacker.</i></b> Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total.</p>
+<p><b><i>Savage Attacker.</i></b> Once per turn when you deal melee damage, add 1 for one-handed weapons, and 2 for two-handed weapons.</p>
 <p><b><i>Sentinel.</i></b> When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn. Creatures within 1 square of you provoke opportunity attacks from you even if they take the Disengage action. When a creature within 1 square of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking crealure.</p>
+<p><b><i>Sharpshooter.</i></b> When attacking with a ranged weapon, you ignore half cover and treat three-quarters cover as half cover, and you can choose to increase critical hit damage modifier by 0.5, but also reduce graze damage modifier by 0.5.</p>
 <p><b><i>Spell Sniper.</i></b> When you cast a spell that attacks Deflection, the spell's range is doubled. Your ranged spell attacks ignore half cover and treat three-quarters cover as half cover.</p>
 <p><b><i>Stealthy.</i></b> You can try to hide when you are lightly obscured from the creature from which you are hiding. When you are hidden from a creature and miss it with a ranged weapon attack, you still remain hidden. If you are hidden, you can move up to 2 squares in the open without revealing yourself if you end the move in a position where you’re not clearly visible.</p>
 <p><b><i>Tough.</i></b> Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hp.</p>
 <p><b><i>War Caster.</i></b> You have advantage on Constitution rolls to maintain concentration on a spell. You can cast spells even when both your hands are occupied with weapons or shield. When a hostile creature's movement provokes an opportunily attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.</p>
 
 
+<br/><h1 id="characterCreation">Creating a Character</h1>
+<h4>Step 1: Choose a Class</h4>
+<p>Every adventurer comes from a certain background, and has undergone a certain type of training (whether formal or not), thus obtaining a basic set of skills that, throughout one's trials and tribulations, will be further honed in the same general direction. This set of skills is called a class, and the are 12 paths to choose from: <a href="classes/barbarian.html">Berserker</a>, <a href="classes/bard.html">Bard</a>, <a href="classes/cleric.html">Cleric</a>, <a href="classes/druid.html">Druid</a>, <a href="classes/fighter.html">Fighter</a>, <a href="classes/monk.html">Monk</a>, <a href="classes/paladin.html">Paladin</a>, <a href="classes/ranger.html">Ranger</a>, <a href="classes/rogue.html">Rogue</a>, <a href="classes/sorcerer.html">Sorcerer</a>, <a href="classes/warlock.html">Warlock</a>, or <a href="classes/wizard.html">Wizard</a>. You cannot change or alter your class during the game, but there are different paths to choose from in each class, and there is enough flexibility to allow several interesting variations for the same class.</p>
+<h4>Step 2: Choose a Race</h4>
+<p>Choose one of the following races (including sub-race if multiple choices available): <a href="races/dragonborn.html">Dragonborn</a>, <a href="races/dwarf.html">Dwarf</a>, <a href="races/elf.html">Elf</a>, <a href="races/gnome.html">Gnome</a>, <a href="races/half_elf.html">Half-Elf</a>, <a href="races/halfling.html">Halfling</a>, <a href="races/half_orc.html">Half-Orc</a>, <a href="races/human.html">Human</a>, <a href="races/highman.html">Highman</a>, <a href="races/kenku.html">Kenku</a>, <a href="races/lizardfolk.html">Lizardfolk</a>, <a href="races/tiefling.html">Tiefling</a>, or <a href="races/tigran.html">Tigran</a>. Every race (and sub-race) has its peculiarities and inclinations, which you may wish to consider for roleplaying purposes. More practically, the chosen race determines your character's general appearance, base speed, the languages he/she can speak, as well as a number of racial traits, which provide miscellaneous benefits. Some races may provide adjustments to your attributes; keep these in mind for step 3.</p>
+<h4>Step 3: Determine Attributes</h4>
+<p>The attributes for your character are determined using a point buy system. You start with 4 points which you can spend however you like to buy your character's six attributes, according to the following table. Remember to add your chosen race's attribute modifiers.</p>
+<table>
+  <tr><th>Score</th><th>-2</th><th>-1</th><th>+0</th><th>+1</th><th>+2</th><th>+3</th></tr>
+  <tr><td>Cost</td><td>-2</td><td>-1</td><td>+0</td><td>+1</td><td>+2</td><td>+4</td></tr>
+</table>
+<h4>Step 4: Choose your character's proficiencies</h4>
+<p>You get to choose 5 + Intelligence proficiencies: skills, weapons, instruments, and languages in addition to those granted by your race and class. You have no restrictions on what you can become proficient in, but you should prepare a background that explains how you came by that knowledge.</p>
+<h4>Step 5: Your character's background and personality</h4>
+<p>You have now chosen everything needed for the mechanics of the game, but you should also spend some time fleshing out a background and personality for your character, so that they are more than just a pile of stats. AD&amp;D might be primarily about adventuring and overcoming various challenges, but it is also a roleplaying game that enables you to act out fantasy characters in a fantasy world. You needn't write too much, even a few lines might suffice to give context to your character's decision and make the game more immersive for everyone. The only requirement for your background information is that it doesn't contradict game lore or mechanics (for example, you can't have a lazy forgetful wizard, since their power comes from intensive study &mdash; exceptions are subject to GM approval).</p>
+<p>If in doubt or lacking inpiration, consult the GM. It is not required to have everything about a character set in stone at the start; you can also add details as the adventure unfolds, though within the limits of common sense (so for example, it is not acceptable to say an NPC is suddenly a relative of your character).</p>
+<p>Remember that the most important thing is for you and everyone at the table to have fun. Choose a personality and story that would be interesting and synergizes well with your party members. Never choose something that is deliberately antagonistic to another character unless <b>everyone</b> at the table agrees to this. Also, remember that the character's attributes define raw physical and mental ability, and have nothing to do with intelligence or personality unless you specifically choose to interpret it this way.</p>
+<p>Congratulations! You are now done and ready to play!</p>
+<h4>Alternative: Hardcore Rules</h4>
+<p>For players who want a little more randomness in their game, or simply wish it to be more challenging, they can opt for the following alternative rules. These hardcore rules risk unbalacing the game and the party (a character may be stronger than the rest, and some characters may be significantly weaker/stronger than average). In the interest of fairness, it is recommended that the entire party be either normal or hardcore, and exceptions should only be made with the approval of all the players and the GM.</p>
+<p><b><i>Determining Attributes.</i></b> Instead of point-buy, roll 6 d6s. Assign each resulting number to the attribute of your choice, then subtract 3.</p>
+<p><b><i>HP gain on level up.</i></b> Instead of a fixed gain, you must roll your hit die to determine your hp increase.</p>
+
+
 <br/><h1 id="encounters">Encounters</h1>
 <p>In encounter play, characters are making moment-by-moment decisions and taking very short actions (each taking up just a few seconds). They may or may not be following an initiative order. These include various sub-modes of play like combat, chase scenes, action scenes, and social interactions.</p>
 <p><b>Step 1.</b> Determine what each side intends to achieve and how it intends to achieve it.</p>
-<p><b>Step 2.</b> Describe the battlefield and the combatants; optionally, place the combatants and other important features on a grid.</p>
-<p><b>Step 3.</b> If either of the sides wants to initiate a fight, roll initiative.</p>
+<p><b>Step 2.</b> Describe the environment and opposing sides; if combat is likely and the environment is complex, place the combatants and other important features on a grid.</p>
+<p><b>Step 3.</b> If any creature initiates a hostile or time-sensitive action, roll initiative.</p>
 <p><b>Step 4.</b> Determine what creatures (if any) are surprised.</p>
-<p><b>Step 5.</b> In descending order of initiative, each character takes its turn, until the conflict is solved.</p>
+<p><b>Step 5.</b> In descending order of initiative, each character takes its turn, until the conflict is resolved.</p>
 <h4>Surprise</h4>
 <p>A creature is considered to be surprised if it fails to spot any of the incoming attackers (either because the creature cannot physically sense them, or because the attackes had a successful Stealth roll against this creature's Passive Perception). A surprised character can't take any action, quick action, free action, or reaction, on the first turn of combat.</p>
 <h4>Initiative</h4>
@@ -197,7 +268,7 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <h4>Facing</h4>
 <p>Most creatures can only see (and therefore fight against) things in a front arc. By default, the front arc consists of all squares in front of, or to the side of, the creature. The rest of the squares form the rear arc. Exceptions to this rule must be explicitly stated.</p>
 <p>Facing is first determined when initiative is rolled. Afterwards, every time a creature willingly moves, and before each separate attack, it can choose a new facing. A creature can also spend its reaction to change its facing, in response to the movement of a creature it is aware of (you cannot change your facing when an invisible or stealthed opponent moves), or in response to a melee attack by a creature you are aware of.</p>
-<p>Keeping track of facing is important, because attacks made from the rear arc of a creature have advantage.</p>
+<p>Keeping track of facing is very important, because attacks against a creature made from its rear arc have advantage.</p>
 <h4>A Character's Turn</h4>
 <p>A turn represents a period of 6 seconds, during which characters act almost simultaneously, with some starting their action faster than others (determined by the initiative order). During its turn, a character can move, take an action, a quick action, and/or a free action, mixed in any order.</p>
 <h4>Movement</h4>
@@ -212,12 +283,13 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <p><b><i>Creature size.</i></b> Tiny creatures control only a quarter of a square; therefore, up to four of them can occupy the same square at once. Small and medium creatures control a whole square. Large creatures control a 2x2 area, huge creatures 3x3, and gargantuan creatures 4x4 or, in rare cases, even more. At the GM's discretion, combat against a creature 2 sizes larger or more may follow special rules, such as requiring melee characters to climb their foe in order to be able to strike somewhere where it hurts.</p>
 <h4>Actions</h4>
 <p>Unless special feats dictate otherwise, a character can only take one of these options during a turn.</p>
-<p><b><i>Attack.</i></b> Make an attack with a weapon or natural ability of the character. Check the description of the attack you plan to use for information on how many attacks are permitted, the roll modifier, and the damage inflicted if the attack succeeds (a number of dice, which must be rolled).</p>
+<p><b><i>Attack.</i></b> Make an attack with a weapon or natural ability of the character. Check the description of the attack you plan to use for information on how many attacks are permitted, the roll modifier, and the base damage inflicted on success. The actual damage dealt is computed as (base damage + extra damage) * damage modifier + raw damage. On a critical success, the attack hits a vulnerable point and the damage modifier is increased by 0.5, while on a partial success the attack is a graze and the damage modifier is decreased by 0.5.</p>
 <p>For each attack that you make you can choose a different target. Furthermore, instead of using the attack as described, you can use one of the following alternatives:</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Feint.</b> Can only be used with a melee weapon. You fake an attack with the intention of creating an opening in your opponent's defenses. The next melee attack from you or one of your allies made before the start of your next turn has advantage.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Heavy attack.</b> Can only be used with a melee weapon. You strike with a wide swing, intending to deal a killing blow - useful against opponents that are open to attack and easy to hit. Increase critical hit damage modifier by 0.5, but also reduce graze damage modifier by 0.5.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Precise strike.</b> You aim to hit a specific body part of the enemy. Roll your attack with disadvantage, but a hit may produce additional effects at the GM's discretion. For example: for a humanoid's weapon arm, a graze imposes disadvantage on the next attack, and a hit or better causes it to drop the weapon.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Grapple.</b> The target of your grapple must be no more than one size larger than you, it must be within your reach, and you must have a free hand with which to seize the target. Roll Strength (Athletics) vs Firmness. If you succeed, the target is <a href="conditions/grappled.html">grappled</a>. You can release the target as a free action. You can also use a second free hand in order to <a href="conditions/restrained.html">restrain</a> your enemy. You do not have advantage on attack rolls against the creature you are grappling.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Shove.</b> The enemy must be no more than one size larger than you, and he must be within your reach. Roll Strength (Athletics) vs Firmness. If you succeed, you can either push the enemy 1 square away or knock him prone. You have advantage if you have the high ground (at least half a meter above your foe). You have disadvantage if the enemy has the high ground. If you carry a shield, a successful shove also deals 1d4 crushing damage.</p>
-<p id="dualWield">&nbsp;&nbsp;&nbsp;&nbsp;<b>Dual wielding.</b> Attack with a [light] or [thrown] weapon that you're holding in one hand, then use your quick action to attack with a different [light] weapon that you're holding in the other hand. You don't add your ability modifier to the damage of this extra attack, unless that modifier is negative. If a weapon has the [loading] tag, then it cannot be reloaded while you continue to dual wield.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Shove.</b> The enemy must be no more than one size larger than you, and he must be within your reach. Roll Strength (Athletics) vs Firmness. If you succeed, you can either push the enemy 1 square away or knock him <a href="conditions/prone.html">prone</a>. You have advantage if you have the high ground (at least half a meter above your foe). You have disadvantage if the enemy has the high ground. If you carry a shield, a successful shove also deals 2 crushing damage.</p>
+<p id="dualWield">&nbsp;&nbsp;&nbsp;&nbsp;<b>Dual wielding.</b> Attack with a [light] or [thrown] weapon that you're holding in one hand, then use your quick action to attack with a different [light] weapon that you're holding in the other hand. You don't add your attribute modifier to the damage of this extra attack, unless that modifier is negative. If a weapon has the [loading] tag, then it cannot be reloaded while you continue to dual wield.</p>
 <p><b><i>Cast a spell.</i></b> See the spell description for the time it takes to cast the spell. Some spells use a quick action, or a reaction, most require one action, while others consume actions over a certain number of rounds. See the <a href="#spellcasting">spellcasting</a> section for more information.</p>
 <p><b><i>Dash.</i></b> Double your movement speed for this turn.</p>
 <p><b><i>Disengage.</i></b> Your movement doesn't provoke attacks of opportunity on this turn.</p>
@@ -237,61 +309,43 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <p><b><i>Opportunity attack.</i></b> If you move out of an opponent's melee reach, and your starting point was in its front arc, then that opponent can use its reaction to make an opportunity attack on you (following the rules of a regular melee attack). You don't provoke an opportunity attack if you are moved by an external force (such as a shove, or an explosion), because it's too sudden a movement for the average opponent to react to it.</p>
 <h4>Ranged attacks</h4>
 <p><b><i>Range.</i></b> If a ranged attack has a single distance noted, you can't attack targets beyond this range. If there are two distances, the smaller number is the normal range and the other is the long range, beyond which you can't attack. If you attack targets beyond the normal range, you roll with disadvantage.</p>
-<p><b><i>Ranged weapons in melee.</i></b> If you are within a square of a hostile creature that isn't incapacitated, and you are in its front arc, then your ranged attack rolls have disadvantage.</p>
+<p><b><i>Ranged weapons in melee.</i></b> If you are within melee range of a hostile creature that isn't incapacitated, and you are in its front arc, then your ranged attack rolls have disadvantage.</p>
 <h4>Cover</h4>
 <p>There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies. Cover bonuses don't apply to area of effect spells, unless the cover stands between the creature and the center of the effect. An object provides cover only if it is between a target and its attacker.</p>
 <p><b><i>Half cover.</i></b> Provides +2 to Deflection and Reflex. A target has half cover if an obstacle covers at least half of its body. Standing behind a creature your size or one size bigger counts as half cover. At the GM's discretion, a failure with 1 or 2 can force an attack against the covering creature.</p>
 <p><b><i>Three-quarters cover.</i></b> Provides +5 to Deflection and Reflex. A target has 3/4 cover if an obstacle covers at least 3/4 of its body.</p>
 <p><b><i>Full cover.</i></b> Can't be targeted directly by ranged attacks or spells. A target has full cover if it is completely concealed by an obstacle.</p>
 <h4>Damage resistance and vulnerability</h4>
-<p>If a creature has <b>resistance</b> to a damage type, then damage from that source is halved. Conversely, <b>vulnerability</b> doubles damage from that source. This multiplier is applied only after all other damage modifiers have already been added. You can't stack resistance nor vulnerability to a damage type.</p>
-<h4>Falling to 0 hp</h4>
-<p>Whenever you fall to 0 hp, you immediately fall <a href="conditions/unconscious.html">unconscious</a>. When brought to 0 hp, if there is damage remaining that equals or exceeds your max hp, then you die instantly.</p>
-<p>Each turn you start at 0 hp, you must make a death saving throw: if the roll of a d20 is 10 or higher, you gain a success, otherwise you gain a failure. Three failures means you die, while three successes means you stabilize. A stable creature remains unconscious, but is in no danger of dying (unless it takes damage again) and will regain 1hp after 1d4 hours (thus becoming conscious again).</p>
-<p>If you roll a 20 on a death saving throw, you gain 1 hp (thus immediately regaining consciousness). If you roll a 1, it counts as two failures.</p>
-<p>If you take damage while unconscious, you gain a death save failure. If you take a critical hit, you gain two failures. If the damage equals or exceeds your max hp, you immediately die.</p>
-<p>A creature can be stabilized with a DC 10 Wisdom (Medicine).</p>
+<p>If a creature has <b>resistance</b> to a damage type, then damage from that source is halved. Conversely, <b>vulnerability</b> doubles damage from that source. This multiplier is applied only after all other damage modifiers have already been factored in. Neither resistance nor vulnerability to a damage type can be stacked.</p>
 <h4>Knocking a creature out</h4>
-<p>When an attacker reduces an opponent to 0 hp with any melee attack (weapon, spell, or unarmed), it can choose to knock out the target, which then falls unconscious and is stable.</p>
+<p>When an attacker reduces an opponent to 0 hp with any melee attack (weapon, spell, or unarmed), it can choose to knock out instead of harming the target. The creature falls unconscious and doesn't take any injuries, but still loses 1 Health.</p>
 <h4>Temporary hit points</h4>
-<p>Temporary hp is separate from normal hp. It can't be healed by any means, it doesn't stack (so if you are affected by two boons providing temporary hp, you must choose one of them) and it is always the first to absorb damage. If you have 0 hp, then temporary hp doesn't restore you to consciousness, nor does it stabilize you; it only helps absorb damage while in that state.</p>
+<p>Temporary hp is separate from normal hp. It can't be healed by any means, it doesn't stack (so if you are affected by two boons providing temporary hp, you must choose one of them) and it is always the first to absorb damage. If you have 0 hp, then temporary hp doesn't remove the <a href="conditions/bloodied.html">bloodied</a> condition.</p>
 <p>Unless the feature that granted you temporary hp has a duration, they last until they are depleted or until you finish a long rest.</p>
+<h4>Instant kills</h4>
+<p>If a creature is completely at ease (does not think itself in any peril) or sleeping, or otherwise incapacitated and unable to defend itself, it can be killed in one blow, provided that an attacker satisfies these following conditions:</p>
+<ul>
+  <li>can reach a vulnerable part of that creature with a lethal weapon (eg. a humanoid's neck with a bladed weapon)</li>
+  <li>can approach the target undetected with a Roll Dexterity (Stealth) vs Passive Perception (-5 for sleeping creatures, automatic critical success if creature completely unable to sense its attacker)</li>
+</ul>
+<p>On a critical success you kill your target in complete silence. On a success, you kill your target but its death throes can be heard within 4 squares, unless there is some other source of noise. On a partial success, you kill your target, but it yells for help, which is clearly audible for 30m.</p>
 <h4>Vulnerable body part</h4>
 <p>Foes may have some body part that is both important to combat functions and quite vulnerable. For example, humanoid creatures have arms and legs that, if cut off, impair their combat capacity. The heart, or head, while definitely of supreme importance, are however not vulnerable, as they are always the best defended parts of a body (unless otherwise specified).</p>
 <p>A creature can specifically target such a body part, with a disadvantage on the attack roll. The attack deals damage to both the body part and the body itself. If the creature is healed, then it can choose to also apply that healing on a damaged body part. If not otherwise specified, the body part defaults to a quarter of the health of the body. If the body part is reduced to 0hp then it is destroyed, and cannot be healed through ordinary means; furthermore, all abilities granted by that body part are immediately lost.</p>
 <p>Vulnerable parts are usually specified in a monster's description, but the GM can accept improvisation on this front if it makes sense. For example, all humanoids rely on their right arm to fight; if destroyed, they may attempt to fight with their left (if at all possible), but at a disadvantage, and only after picking up their weapon. If a leg is destroyed, then movement speed is halved. If both legs are destroyed, then the creature is stuck in prone (this stacks with the halved movement speed).</p>
-<h4 id="creature_intel">Creature intelligence</h4>
-<p>A creature's intelligence belongs to one of four rough categories: mindless, instinctive, clever and sentient. This division is mostly about communication, but it also determines the behavior of those creatures.</p>
-<p>A <b>mindless</b> creature has no will of its own, and it will merely carry out its instructions to the best of its ability. It cannot communicate in any way (except perhaps to blurt out a message programmed into it) and it cannot adapt to circumstances it hasn't been prepared for. This doesn't make it dumb, but merely rigid in its actions.</p>
-<p>A creature with <b>instinctive</b> intelligence relies on its instincts and its experience in its actions. Most animals in the wild have instinctive intelligence. They can communicate in very primitive ways, but only about tangible things (food, shelter, threats) and simple emotions like fear or anger. Even this limited communication can only be realized in its fullest extent with the help of magic.</p>
-<p>A <b>clever</b> creature is not yet fully sentient, but very nearly so. It can learn fairly complex patterns and actions, and can understand a wide array of concepts, even some slightly abstract ones. Cats, dogs and dolphins are examples of clever creatures.</p>
-<p>A <b>sentient</b> creature is capable of thinking about itself and about the most abstract of concepts. There is a wide range of variance in the intelligence of sentients, how much they can understand and how well they can plan, but all sentients can communicate in at least one language in the fullest sense of the word.</p>
-<h4>Morale</h4>
-<p>Morale is an indicator for the GM to keep in mind during battles, the likelihood for the losing side to cut their losses and flee. Note that intelligent and well-organized adversaries might enact a fighting retreat, whose aim is to secure a better tactical position - this is very different to a full-on retreat, or a panicked rout. It is up to the GM to decide if and in what manner a creature or group will flee. The morale rating only roughly describes how likely it is for a rout to happen, and how panicked it is likely to be. After all, much depends on the specific circumstances, such as how badly the creatures are losing and what their goals in the fight are. Creatures fighting to defend their offspring will generally fight to the death, for example.</p>
-<p>Sentient creatures may also offer to surrender, but only if they believe it will be accepted and honored. Surrender is more likely when retreat is difficult or impossible, when it has been formally offered, and particularly if the creatures are of the same species with some of their attackers.</p>
-<p>Mindless creatures do not have morale and they will follow their orders regardless of how severe the consequences. More intelligent creatures, however, have one of six ratings: cowardly, hesitant, firm, brave, fanatic, and heroic.</p>
-<p><b>Cowardly</b> creatures are easily cowed by displays of power (such as high-level spells, environment-shaping effects, or even outright intimidation), by the loss of a leader, or by grievous injuries. They don't have the stomach for fights not in their favor, although they may fight on out of a sick pleasure to inflict pain on others. They value their own skin far more than that of their allies and they will always rout in disorganized manner, sometimes even while other allies fight on. They will also prefer ranged weapons over melee whenever possible. If routed, they are unlikely to rally any time soon, unless forced to by a leader. Goblins are the archetypal cowardly creature.</p>
-<p><b>Hesitant</b> creatures aren't terribly motivated to fight, but will continue to do so for as long as defeat doesn't seem inevitable. As long as a leader they fear or respect is in sight they will keep fighting, at least as long as there isn't a more fearful force in opposition. They have some respect for the lives of others, and so their retreats will sometimes be more organized.</p>
-<p><b>Firm</b> creatures are akin to regular soldiers. They will fight on bravely until it is clear that the fight is lost. Even then, they will continue holding the line if a leader is present. Their retreats are seldom panicked routs, and they may even rally on their own if the enemy isn't chipping at their heels.</p>
-<p><b>Brave</b> creatures are proud or elite warriors, who will rarely flee, and even then certainly not in a disorganized manner. They will never abandon allies or a leader, even under the most dire circumstances, and they will never drop their weapons when retreating. They will rally as soon as feasible and seek to fulfill their goals.</p>
-<p><b>Fanatic</b> creatures are like men who have nothing to lose, or religious zealots and they behave almost like mindless creatures. They will plunge into peril almost heedless of danger and fight to the death unless specifically commanded otherwise by their superior. Fanatics always have someone or something they believe unquestioningly in.</p>
-<p><b>Heroic</b> creatures will fight unwaveringly in pursuit of their goal, but will not die foolishly. If they can achieve their goal just as well (or better) by retreating or surrendering, they will do so.</p>
-<p>The leader of a group (if one even exists) is at the GM's discretion. Generally, it will be the strongest creature in the group. If an encounter group consists of different races, it is also possible to have different leaders for each one.</p>
 <h4>Mounted combat</h4>
 <p>To mount or dismount, you need to spend half of your movement points (this is impossible to do if your speed is 0).</p>
-<p>If an effect moves your mount against its will, or it would knock you prone while mounted, then you must succeed on a DC Acrobatics 10 or be knocked off the mount, landing prone in a square next to it.</p>
+<p>If an effect moves your mount against its will, or it would knock you prone while mounted, then you must Roll Strength (Athletics/Acrobatics) or be knocked off the mount, landing prone in a square next to it.</p>
 <p>If your mount is knocked prone, you can use your reaction to dismount it as it falls and land gracefully in a square next to it. Otherwise, you fall prone in a square next to the mount.</p>
 <p>If the mount is intelligent, then it acts independently (although, of course, it can coordinate with its rider if it is so inclined). It has its own spot in the initiative order, and its possibilities are in no way limited by the rider on its back (within the limits of common decency). Conversely, a domesticated and trained mount will act during your turn, with one of these actions: Dash, Disengage, or Dodge.</p>
 <p>If a mount provokes an attack of opportunity, then the enemy can attack either you or your mount.</p>
 <h4>Underwater combat</h4>
-<p>When a creature without swimming speed makes a melee attack with a weapon other than a dagger, short sword, javelin, spear or trident, it suffers disadvantage on its attack rolls.</p>
-<p>A ranged attack automatically misses a target beyond the weapon's normal range. Even within the normal range, the attack roll has disadvantage unless it's a crossbow, a net, or a javelin (or thrown spear or dart).</p>
+<p>Unless a creatures has a specified swimming speed, every square of movement costs two instead. When a creature without swimming speed makes a melee attack with a weapon other than a dagger, short sword, javelin, spear or trident, it suffers disadvantage on its attack rolls.</p>
+<p>A ranged attack automatically misses a target beyond the weapon's normal range. Even within the normal range, the attack roll has disadvantage unless it's a crossbow, a net, a javelin, a thrown spear, or a dart.</p>
 <p>Fully submerged creatures have resistance to fire damage.</p>
 <h4>Combat against mobs</h4>
 <p>Some foes are so outmatched that only sheer numbers can hope to even the scales in their favor. In order to ease bookkeeping in such situations, these foes are handled as a mob.</p>
 <p>The mob moves and acts all at once, and it can occupy several squares (loosen the restriction for one Medium creature per square if needed). Damage is applied to the mob as a whole, and several individuals can be killed with one attack. When attacking, determine the d20 roll an individual creature would need to hit. If it's 1-5, apply damage for every individual in the mob; if 6-12, for every 2; if 13-14, for every 3; if 15-16, for every 4; if 17-18, for every 5; if 19, for every 10; if 20, for every 20.</p>
-<h4>Instant kills</h4>
-<p>If an enemy is unable to defend himself and you are armed with a lethal melee weapon, then you can kill him instantly, without any checks. A sleeping target can be killed instantly with just a Stealth check, rolled with advantage, against the target's Passive Perception. Targets who are completely at ease (unaware there is a foe around) can also be instantly killed with a Stealth check against the target's Passive Perception (this is separate from the check to Hide; and in this case you receive no advantages from being obscured or invisible).</p>
 <h4 id="socialInteract">Social Interaction</h4>
 <p>It may be the case that the person you're interacting with has objections to helping you out. If that's the case, then the PCs must somehow overcome these objections (convince the person).</p>
 <p>The NPC starts with one or more objections, each with a score assigned, defining how strong the objection is. To surpass these objections, the PCs must either address an objection (thus lowering its score) OR provide an incentive to help. The better the argument, the greater the score it has. But to carry this argument across, a PC has to rely on Persuasion or Intimidation (the latter can only be used to provide an incentive of fear – although it is only useful when the person being threatened has something to fear from the PCs). Both sides may employ falsehood or misinformation in the discussion (if you're convinced a false statement is true, it's not lying). In this case, success is determined by a roll of Deception vs Passive Insight.</p>
@@ -421,7 +475,7 @@ A creature can't gain temporary hit points from this feat again until it has fin
 </table>
 <br/><h4 id="concentration">Concentration</h4>
 <p>Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends. If a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration at any time (no action required).</p>
-<p>The following situations remove a spellcaster's concentration: casting another spell that requires concentration, casting a spell whose casting time is longer than one action or being incapacitated or killed. When taking damage, the spellcaster must roll Constitution vs max(10, damage/2) to maintain his concentration. At the GM's discretion, certain stressful situations may also impose a DC 10 Constitution roll to maintain concentration.</p>
+<p>The following situations remove a spellcaster's concentration: casting another spell that requires concentration, casting a spell whose casting time is longer than one action or being incapacitated or killed. When taking damage, the spellcaster must roll Constitution vs max(10, damage/2) to maintain his concentration. At the GM's discretion, other disruptive events (such as an unexpected loud noise, an earth-shattering explosion, or a scary apparition) may also require the character to roll to maintain concentration.</p>
 <h4>Area of effect</h4>
 <p>Spells with an area of effect have a point of origin and a shape along which the effect manifests itself. If there's an obstacle that provides full cover between a creature and the point of origin, that creature is safe from the effects of the spell. When playing on squares, a spell affects a square provided that its area of effect overlaps half of more of that square.</p>
 <p><b><i>Cone.</i></b> A cone's width at any point is equal to the distance to its point of origin, which isn't included in the area of effect, unless you decide so. When playing on squares, a row at distance N from the point of origin is affected on a width of N (if N is odd) or N-1 (if N is even). (Other fractions of squares are also technically affected, but any creature in such a square has plenty of space to dodge)</p>
@@ -452,22 +506,22 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <br/><table>
   <tr><th>Armor</th><th>Deflection</th><th>Strength Required</th><th>Impairs Stealth</th><th>Cost</th><th>Weight</th></tr>
   <tr><td><b><i>Light Armor</i></b></td><td colspan="5"></td></tr>
-  <tr><td>Gambeson</td><td>11 + Dex</td><td>&mdash;</td><td>No</td><td>40 gg</td><td>1 kg</td></tr>
-  <tr><td>Boiled leather</td><td>12 + Dex</td><td>&mdash;</td><td>No</td><td>80 gg</td><td>2 kg</td></tr>
+  <tr><td>Gambeson</td><td>1 + Dex</td><td>&mdash;</td><td>No</td><td>40 gg</td><td>1 kg</td></tr>
+  <tr><td>Boiled leather</td><td>2 + Dex</td><td>&mdash;</td><td>No</td><td>80 gg</td><td>2 kg</td></tr>
   <tr><td><b><i>Medium Armor</i></b></td><td colspan="5"></td></tr>
-  <tr><td>Hide</td><td>12 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>40 gg</td><td>4 kg</td></tr>
-  <tr><td>Jack of plates</td><td>13 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>90 gg</td><td>8 kg</td></tr>
-  <tr><td>Chain shirt</td><td>14 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>180 gg</td><td>8 kg</td></tr>
-  <tr><td>Brigandine</td><td>15 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>400 gg</td><td>8 kg</td></tr>
-  <tr><td>Breastplate</td><td>16 + Dex (max 2)</td><td>+2</td><td>Yes</td><td>750 gg</td><td>10 kg</td></tr>
+  <tr><td>Hide</td><td>2 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>40 gg</td><td>4 kg</td></tr>
+  <tr><td>Jack of plates</td><td>3 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>90 gg</td><td>8 kg</td></tr>
+  <tr><td>Chain shirt</td><td>4 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>180 gg</td><td>8 kg</td></tr>
+  <tr><td>Brigandine</td><td>5 + Dex (max 2)</td><td>&mdash;</td><td>No</td><td>400 gg</td><td>8 kg</td></tr>
+  <tr><td>Breastplate</td><td>6 + Dex (max 2)</td><td>+2</td><td>Yes</td><td>750 gg</td><td>10 kg</td></tr>
   <tr><td><b><i>Heavy Armor</i></b></td><td colspan="5"></td></tr>
-  <tr><td>Chain mail</td><td>16</td><td>+2</td><td>No</td><td>120 gg</td><td>10 kg</td></tr>
-  <tr><td>Reinforced chain</td><td>17</td><td>+3</td><td>Yes</td><td>200 gg</td><td>11 kg</td></tr>
-  <tr><td>Plate</td><td>18</td><td>+4</td><td>Yes</td><td>1,500 gg</td><td>15 kg</td></tr>
+  <tr><td>Chain mail</td><td>6</td><td>+2</td><td>No</td><td>120 gg</td><td>10 kg</td></tr>
+  <tr><td>Reinforced chain</td><td>7</td><td>+3</td><td>Yes</td><td>200 gg</td><td>11 kg</td></tr>
+  <tr><td>Plate</td><td>8</td><td>+4</td><td>Yes</td><td>1,500 gg</td><td>15 kg</td></tr>
   <tr><td><b><i>Shield</i></b></td><td colspan="5"></td></tr>
   <tr><td>Buckler</td><td>+1</td><td>&mdash;</td><td>&mdash;</td><td>20 gg</td><td>1 kg</td></tr>
   <tr><td>Shield</td><td>+2</td><td>&mdash;</td><td>&mdash;</td><td>40 gg</td><td>2 kg</td></tr>
-</table><br/>
+</table>
 <p><b><i>Gambeson.</i></b> Made from several layers of heavy fabric, stuffed with horse hair to provide resilience. The end result is not only light and comfortable, but also offers a fair degree of protection and can absorb most glancing blows.</p>
 <p><b><i>Boiled leather.</i></b> When boiled, animal leather can become really tough. Strips of hardened leather are sown on top of a gambeson, thus providing increased protection, although this improvement is quite expensive. The result is hardy but flexible armor, although one that is difficult to repair.</p>
 <p><b><i>Hide.</i></b> Employed by wild tribes who lack advanced craftsmanship, hide armor simply involves layers of thick furs sewn together in a primitive armor, perhaps with some hardened leather protecting vital organs. It can be quite stifling to wear, but it offers good protection.</p>
@@ -484,12 +538,12 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <p><b><i>Doff.</i></b> This is the time it takes to take off armor. It takes one minute to doff light or medium armor, 5 minutes for heavy armor, and 1 action for a shield.</p>
 <h4>Improvised Weapons</h4>
 <p>Sometimes characters don't have their weapons and have to attack with whatever is close at hand. An improvised weapon means any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead goblin. If the weapon is reasonably similar to a weapon, then it behaves as that weapon in all respects (for example, a table leg is as good as a club).</p>
-<p>An object that bears no resemblance to a weapon deals 1d4 damage (or whatever the GM deems appropriate). If a character uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown tag, it also deals 1d4 damage. An improvised thrown weapon has a normal range of 4 squares and a long range of 12 squares.</p>
+<p>An object that bears no resemblance to a weapon deals 2 damage (or whatever the GM deems appropriate). If a character uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown tag, it also deals 2 damage. An improvised thrown weapon has a normal range of 4 squares and a long range of 12 squares.</p>
 <p>In case of extreme emergency, one can even use one's bare fists (which naturally can follow the <a href="#dualWield">dual wielding rules</a>), but a fist does a mere 1 + Strength crushing damage.</p>
 
 <h4>Weapon Tags</h4>
+<p><b><i>Strength/Dexterity.</i></b> The weapon uses this attribute to determine bonus to hit rolls.</p>
 <p><b><i>Ammunition.</i></b> This weapon expends one unit of ammunition to use in a ranged attack. Ammunition can be partially recovered after a battle if a character spends around a minute retrieving it - restock half of the expended ammunition.</p>
-<p><b><i>Finesse.</i></b> When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.</p>
 <p><b><i>Heavy.</i></b> Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 <p><b><i>Light.</i></b> A light weapon is small and easy to handle, making it ideal for use when <a href="#dualWield">fighting with two weapons</a>.</p>
 <p><b><i>Loading.</i></b> Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, quick action, or reaction to fire it, regardless of the number of attacks you can normally make.</p>
@@ -502,36 +556,36 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <br/><table>
   <tr><th>Weapon</th><th>Damage</th><th>Tags</th><th>Cost</th><th>Weight</th></tr>
   <tr><td><b><i>Simple Melee Weapons</i></b></td><td colspan="4"></td></tr>
-  <tr><td>Club</td><td>1d4 crushing</td><td>Light</td><td>0.1 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Dagger</td><td>1d4 piercing</td><td>Finesse, Light, Thrown (range 4/12 squares)</td><td>2 gg</td><td>0.25 kg</td></tr>
-  <tr><td>Greatclub</td><td>1d8 crushing</td><td>Two-handed</td><td>0.2 gg</td><td>2 kg</td></tr>
-  <tr><td>Handaxe</td><td>1d6 slashing</td><td>Light, Thrown (range 4/12 squares)</td><td>5 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Mace</td><td>1d6 crushing</td><td>&mdash;</td><td>5 gg</td><td>1 kg</td></tr>
-  <tr><td>Maul</td><td>2d6 crushing</td><td>Heavy, Two-handed</td><td>8 gg</td><td>6 kg</td></tr>
-  <tr><td>Quarterstaff</td><td>1d6 crushing</td><td>Versatile (1d8)</td><td>0.2 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Sickle</td><td>1d4 slashing</td><td>Light</td><td>1 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Spear</td><td>1d6 piercing</td><td>Thrown (range 4/12 squares), Versatile (1d8)</td><td>1 gg</td><td>0.75 kg</td></tr>
+  <tr><td>Club</td><td>2 crushing</td><td>Light</td><td>0.1 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Dagger</td><td>2 piercing</td><td>Dexterity, Light, Thrown (range 4/12 squares)</td><td>2 gg</td><td>0.25 kg</td></tr>
+  <tr><td>Greatclub</td><td>4 crushing</td><td>Two-handed</td><td>0.2 gg</td><td>2 kg</td></tr>
+  <tr><td>Handaxe</td><td>3 slashing</td><td>Light, Thrown (range 4/12 squares)</td><td>5 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Mace</td><td>3 crushing</td><td>&mdash;</td><td>5 gg</td><td>1 kg</td></tr>
+  <tr><td>Maul</td><td>7 crushing</td><td>Heavy, Two-handed</td><td>8 gg</td><td>6 kg</td></tr>
+  <tr><td>Quarterstaff</td><td>3 crushing</td><td>Versatile (4)</td><td>0.2 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Sickle</td><td>2 slashing</td><td>Light</td><td>1 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Spear</td><td>3 piercing</td><td>Thrown (range 4/12 squares), Versatile (4)</td><td>1 gg</td><td>0.75 kg</td></tr>
   <tr><td><b><i>Simple Ranged Weapons</i></b></td><td colspan="4"></td></tr>
-  <tr><td>Crossbow</td><td>1d8 piercing</td><td>Ammunition (range 16/64), Loading, Two-handed</td><td>25 gg</td><td>2 kg</td></tr>
-  <tr><td>Dart</td><td>1d4 piercing</td><td>Finesse, Thrown (range 4/12 squares)</td><td>0.05 gg</td><td>0.05 kg</td></tr>
-  <tr><td>Javelin</td><td>1d6 piercing</td><td>Thrown (range 6/24 squares)</td><td>0.5 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Shortbow</td><td>1d6 piercing</td><td>Ammunition (range 16/64 squares), Two-handed</td><td>25 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Sling</td><td>1d4 crushing</td><td>Ammunition (range 6/24 squares)</td><td>0.1 gg</td><td>0.05 kg</td></tr>
+  <tr><td>Crossbow</td><td>4 piercing</td><td>Strength, Ammunition (range 16/64), Loading, Two-handed</td><td>25 gg</td><td>2 kg</td></tr>
+  <tr><td>Dart</td><td>2 piercing</td><td>Dexterity, Thrown (range 4/12 squares)</td><td>0.05 gg</td><td>0.05 kg</td></tr>
+  <tr><td>Javelin</td><td>3 piercing</td><td>Thrown (range 6/24 squares)</td><td>0.5 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Shortbow</td><td>3 piercing</td><td>Ammunition (range 16/64 squares), Two-handed</td><td>25 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Sling</td><td>2 crushing</td><td>Ammunition (range 6/24 squares)</td><td>0.1 gg</td><td>0.05 kg</td></tr>
   <tr><td><b><i>Martial Melee Weapons</i></b></td><td colspan="4"></td></tr>
-  <tr><td>Battleaxe</td><td>1d8 slashing</td><td>Versatile (1d10)</td><td>10 gg</td><td>1.25 kg</td></tr>
-  <tr><td>Claymore</td><td>2d6 slashing</td><td>Heavy, Two-handed</td><td>50 gg</td><td>2 kg</td></tr>
-  <tr><td>Lance</td><td>1d12 piercing</td><td>Heavy, Reach, Two-Handed, Unwieldy</td><td>10 gg</td><td>3 kg</td></tr>
-  <tr><td>Longsword</td><td>1d8 slashing</td><td>Versatile (1d10)</td><td>15 gg</td><td>1.25 kg</td></tr>
-  <tr><td>Morningstar</td><td>1d8 piercing</td><td>Versatile (1d10)</td><td>15 gg</td><td>1.5 kg</td></tr>
-  <tr><td>Pike</td><td>1d10 piercing</td><td>Heavy, Reach, Two-Handed</td><td>10 gg</td><td>2 kg</td></tr>
-  <tr><td>Rapier</td><td>1d8 piercing</td><td>Finesse</td><td>25 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Shortsword</td><td>1d6 piercing</td><td>Finesse, Light</td><td>10 gg</td><td>0.5 kg</td></tr>
-  <tr><td>Warhammer</td><td>1d8 crushing</td><td>Versatile (1d10)</td><td>15 gg</td><td>1.5 kg</td></tr>
+  <tr><td>Battleaxe</td><td>4 slashing</td><td>Versatile (5)</td><td>10 gg</td><td>1.25 kg</td></tr>
+  <tr><td>Claymore</td><td>7 slashing</td><td>Heavy, Two-handed</td><td>50 gg</td><td>2 kg</td></tr>
+  <tr><td>Lance</td><td>6 piercing</td><td>Heavy, Reach, Two-Handed, Unwieldy</td><td>10 gg</td><td>3 kg</td></tr>
+  <tr><td>Longsword</td><td>4 slashing</td><td>Versatile (5)</td><td>15 gg</td><td>1.25 kg</td></tr>
+  <tr><td>Morningstar</td><td>4 piercing</td><td>Versatile (5)</td><td>15 gg</td><td>1.5 kg</td></tr>
+  <tr><td>Pike</td><td>5 piercing</td><td>Heavy, Reach, Two-Handed</td><td>10 gg</td><td>2 kg</td></tr>
+  <tr><td>Rapier</td><td>4 piercing</td><td>Dexterity</td><td>25 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Shortsword</td><td>3 piercing</td><td>Dexterity, Light</td><td>10 gg</td><td>0.5 kg</td></tr>
+  <tr><td>Warhammer</td><td>4 crushing</td><td>Versatile (5)</td><td>15 gg</td><td>1.5 kg</td></tr>
   <tr><td><b><i>Martial Ranged Weapons</i></b></td><td colspan="4"></td></tr>
-  <tr><td>Blowgun</td><td>1d4 poison</td><td>Ammunition (range 5/20 squares), Loading</td><td>1 gg</td><td>0.05kg</td></tr>
-  <tr><td>Hand Crossbow</td><td>1d6 piercing</td><td>Ammunition (range 16/64 squares), Light, Loading</td><td>75 gg</td><td>1 kg</td></tr>
-  <tr><td>Heavy Crossbow</td><td>1d10 piercing</td><td>Ammunition (range 20/80 squares), Heavy, Loading, Two-handed</td><td>40 gg</td><td>3 kg</td></tr>
-  <tr><td>Longbow</td><td>1d8 piercing</td><td>Ammunition (range 30/120 squares), Heavy, Two-handed</td><td>40 gg</td><td>1 kg</td></tr>
+  <tr><td>Blowgun</td><td>2 poison</td><td>Dexterity, Ammunition (range 5/20 squares), Loading</td><td>1 gg</td><td>0.05kg</td></tr>
+  <tr><td>Hand Crossbow</td><td>3 piercing</td><td>Strength, Ammunition (range 16/64 squares), Light, Loading</td><td>75 gg</td><td>1 kg</td></tr>
+  <tr><td>Heavy Crossbow</td><td>5 piercing</td><td>Strength, Ammunition (range 20/80 squares), Heavy, Loading, Two-handed</td><td>40 gg</td><td>3 kg</td></tr>
+  <tr><td>Longbow</td><td>4 piercing</td><td>Dexterity, Ammunition (range 30/120 squares), Heavy, Two-handed</td><td>40 gg</td><td>1 kg</td></tr>
 </table><br/>
 
 <h4>Adventuring Equipment</h4>
@@ -544,11 +598,11 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <p><b><i>Chain.</i></b> 5 gg. It's 6m long, can hold 200 kg before bursting can be broken with a DC 18 Strength check.</p>
 <p><b><i>Climber's anchor and rope.</i></b> 2 gg. This anchor is a long and sturdy steel piton, that can be hammered into a rock cliff, thereby anchoring you to it. As long as you keep the rope tied around your waist, you cannot fall more than 6m below the anchor.</p>
 <p><b><i>Crowbar.</i></b> 2 gg. Using a crowbar where its leverage can be applied grants advantage to Strength checks.</p>
-<p><b><i>Holy Water.</i></b> 25 gg. As an action, you can splash the contents of this flask onto a creature within a square of you, or throw it up to 4 squares, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.</p>
+<p><b><i>Holy Water.</i></b> 25 gg. As an action, you can splash the contents of this flask onto a creature within a square of you, or throw it up to 4 squares, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 7 radiant damage.</p>
 <p>Any cleric or paladin may create holy water by performing a special ritual. For one flask, the ritual takes 1 hour to perform, uses 24 gg worth of powdered silver, and requires the caster to expend a 1st-level spell slot.</p>
-<p>Death Water is the reverse of Holy Water, created by clerics that serve evil Deities to serve against celestials and fey. When used against such creatures, it deals 2d6 necrotic damage.</p>
+<p>Death Water is the reverse of Holy Water, created by clerics that serve evil Deities to serve against celestials and fey. When used against such creatures, it deals 7 necrotic damage.</p>
 <p><b><i>Herbalism Kit.</i></b> 10 gg. Contains a mortar and pestle and a variety of glasses and vials needed to prepare herbs into potions, ointments and other varied remedies.</p>
-<p><b><i>Hunting Trap.</i></b> 5 gg. When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. When a creature steps on the plate, the trap makes a +3 attack vs Reflex. On a successful attack, the victim takes 1d4 piercing damage and cannot move anymore. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 1m long). A creature can use its action to make a DC 13 Strength check to open the trap and free its captive. Each failed check deals 1 piercing damage to the trapped creature.</p>
+<p><b><i>Hunting Trap.</i></b> 5 gg. When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. When a creature steps on the plate, the trap makes a +3 attack vs Reflex. On a successful attack, the victim takes 2 piercing damage and cannot move anymore. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 1m long). A creature can use its action to make a DC 13 Strength check to open the trap and free its captive. Each failed check deals 1 piercing damage to the trapped creature.</p>
 <p><b><i>Ink (vial with 30 grams of ink).</i></b> 10 gg. Vital if one wants to write on a parchment with something more elegant (and less painful) than one's own blood. For more crude purposes, a chalk worth 0.01 gg might be more appropriate. A sheet of parchment costs 0.1 gg, while the highly prized paper costs 0.2 gg.</p>
 <p><b><i>Lamp.</i></b> 0.5 gg. Casts a bright light in a 3 square radius, and dim light for a further 6 squares. It uses a flask of oil and burns for about 6 hours.</p>
 <p><b><i>Lantern.</i></b> 15 gg. Has a bullseye that directs light in a bright cone facing forwards. It casts a bright light for 12 squares, and dim light for an additional 12 squares. It also has a hood that can be lowered, so that the lantern only gives off dim light in 1 square. It uses a flask of oil and burns for about 6 hours.</p>
@@ -563,7 +617,7 @@ A creature can't gain temporary hit points from this feat again until it has fin
 <p><b><i>Rope.</i></b> 0.5 gg. It's 6m long, can safely hold 120 kg can be burst with a DC 15 Strength check.</p>
 <p><b><i>Spellbook.</i></b> 100 gg. A wizard's most essential companion. Losing it means losing all one's spells, as this spellbook is completely blank!</p>
 <p><b><i>Thieves' Tools.</i></b> 25 gg. This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. They tools are required in order to disarm traps, pick locks, or tinker with mechanical devices.</p>
-<p><b><i>Torch.</i></b> 0.01 gg. A torch burns for 1 hour, providing bright light in a 4 square radius and dim light for an additional 4 squares. If you make a melee attack with a burning torch and hit, it deals 1d4 crushing + 1 extra fire damage.</p>
+<p><b><i>Torch.</i></b> 0.01 gg. A torch burns for 1 hour, providing bright light in a 4 square radius and dim light for an additional 4 squares. If you make a melee attack with a burning torch and hit, it deals 2 crushing + 1 extra fire damage.</p>
 <h4 id="equipmentPacks">Equipment Packs</h4>
 <p>The starting equipment you get from your class includes a collection of useful adventuring gear, put together in a pack. The contents of these packs are listed here. These packs may also be bought at specialized shops, which might be cheaper than buying the items individually.</p>
 <p><b><i>Burglar's Pack (16 gg).</i></b> Includes a backpack, a bag of ball bearings, two ropes, a bell, 5 candles, a crowbar, a hammer, 10 climbing anchors and rope, a lantern, 2 flasks of oil, 5 days of rations, a tinderbox, and a waterskin.</p>
