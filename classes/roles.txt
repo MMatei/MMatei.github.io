@@ -21,7 +21,7 @@ Character Class:
 		> Reaver - Martial Striker
 		> Totem Warrior - Martial/nature Striker/versatile
 		> Flagellant - Martial Striker/defender
-	BARD (dedicated to supporting others, limited magic, but it recovers on short rest)
+	BARD (dedicated to supporting others, limited spell choices, but compensating with bardic inspiration)
 		> College of Lore - Arcane Leader/controller
 		> College of Valor - Arcane/martial Leader/controller
 	CLERIC - Divine Leader/defender (focusing on healing and protection, is a capable warrior, advantage of divine favor)
@@ -52,7 +52,7 @@ Character Class:
 		> Wild Magic - Arcane Striker
 		> Favored Soul - Arcane Striker/leader
 		> Muscle person of mystery - Arcane Striker+
-	WARLOCK (tanky wizard, able to fight in second or even front line with spell&sword, highly versatile thanks to spell-steal)
+	WARLOCK (sacrifices spells slots for their individual power and replenishment; can fight well enough without open slots)
 		> Fiend - Arcane/divine/martial Striker
 		> Unfathomable One - Arcane/divine/martial Striker/controller
 		> Fey - Arcane/divine/martial Striker/defender
