@@ -1,5 +1,10 @@
-When hacking a game system
---------------------------
+# Meta Rules #
+
+1. Rules must always be as clear as possible, and then as concise as possible. Add examples to help clarify potential corner cases rather than writing a rule that is too long.
+2. If two abilities would have the exact same effects, then there should only be one of them. For example, the barbarian's _brutal critical_ and the half-orc's _savage attacks_ had the exact same text, therefore the former was simply replaced by _savage attacks_ (I liked the name better).
+
+
+# When hacking a game system #
 
 Before hacking (change/add/remove rules in) the game, always ask yourself the following questions and answer them truthfully and thoughtfully:
 
@@ -10,8 +15,8 @@ Before hacking (change/add/remove rules in) the game, always ask yourself the fo
 * Why didn't the game designers do it? (What, if any, are the hidden pitfalls of implementing this change?)
 * Why is this the best way to do it? (Isn't there a smaller change that would produce the same effect?)
 
-Design Aesthetics
------------------
+
+# Design Aesthetics #
 
 *Challenge* is the experience of applying your skills to overcome obstacles and challenges and ultimately to win. Challenge relies on a sense of fairness, that the player’s choices can affect the outcome.
 
